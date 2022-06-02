@@ -1,9 +1,13 @@
 var xhttp = new XMLHttpRequest();
+var message = null;
+var lastUpdateTime = null;
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     let repos = JSON.parse(this.responseText);
     repos.forEach((repo)=>{
-      document.write(`<code>${repo.name}</code>: <em>${new Date(repo.updated_at)}</em><br>`);
+      lastUpdateTime = document.getElementById('lastUpdateTime'),
+      message = `<code>${repo.name}</code>: <em>${new Date(repo.updated_at)}</em><br>`;
+      lastUpdateTime.innerHTML = message;
     });
   }
 };
