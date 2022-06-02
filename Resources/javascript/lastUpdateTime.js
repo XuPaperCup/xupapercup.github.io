@@ -8,7 +8,7 @@ xhttp.onreadystatechange = function() {
     let repos = JSON.parse(this.responseText);
     repos.forEach((repo)=>{
       if (repo.name == requireRepo)
-      message = `Last Update Time: <em>${new Date(repo.updated_at)}</em><BR>`;
+      message = `Last Update Time: ${new Date(repo.updated_at)}<BR>`;
     });
   }
   // Update the content of the element with the message
