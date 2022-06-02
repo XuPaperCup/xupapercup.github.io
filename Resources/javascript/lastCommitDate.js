@@ -4,7 +4,7 @@ xhttp.onreadystatechange = function() {
     let repos = JSON.parse(this.responseText);
     document.write("Website Last Update Day");
     repos.forEach((repo)=>{
-      document.write(`<code>${repo.name}</code>: <em>${new Date(repo.updated_at)}</em><br>`);
+      document.write(`<code>${repo.xupapercup.github.io}</code>: <em>${new Date(repo.updated_at)}</em><br>`);
     });
   }
 };
