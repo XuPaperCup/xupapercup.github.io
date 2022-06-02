@@ -1,5 +1,5 @@
 const desiredRepo = "xupapercup.github.io";
-const dateTagClass = ".autoupdatetime";
+const dateTagClass = ".date";
 
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function()
