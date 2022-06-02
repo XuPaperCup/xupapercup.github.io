@@ -11,38 +11,77 @@ xhttp.onreadystatechange = function() {
       // Store Time Data from GitHub API
       var TimeData = new Date(repo.updated_at);
       // Process Data
-      var local_date = TimeData.getDate();
-      var local_fullyear = TimeData.getFullYear();
-      var local_hours = TimeData.getHours();
-      var local_minutes = TimeData.getMinutes();
-      var local_seconds = TimeData.getSeconds();
-      var local_month = TimeData.getMonth();
-      var local_day = null;
+      var date = TimeData.getDate();
+      var fullyear = TimeData.getFullYear();
+      var hours = TimeData.getHours();
+      var minutes = TimeData.getMinutes();
+      var seconds = TimeData.getSeconds();
+      var month = null;
+      // Fix Math Month Number
+      switch (TimeData.getMonth()) {
+        case 0:
+          month = "1";
+          break;
+        case 1:
+          month = "2";
+          break;
+        case 2:
+          month = "3";
+          break;
+        case 3:
+          month = "4";
+          break;
+        case 4:
+          month = "5";
+          break;
+        case 5:
+          month = "6";
+          break;
+        case 6:
+          month = "7";
+          break;
+        case 7:
+          month = "8";
+          break;
+        case 8:
+          month = "9";
+          break;
+        case 9:
+          month = "10";
+          break;
+        case 10:
+          month = "11";
+          break;
+        case 11:
+          month = "12";
+          break;
+      }
+      var day = null;
       // Change Math Week Number to Chinese Week Number
       switch (TimeData.getDay()) {
         case 1:
-          local_day = "一";
+          day = "一";
           break;
         case 2:
-          local_day = "二";
+          day = "二";
           break;
         case 3:
-          local_day = "三";
+          day = "三";
           break;
         case 4:
-          local_day = "四";
+          day = "四";
           break;
         case 5:
-          local_day = "五";
+          day = "五";
           break;
         case 6:
-          local_day = "六";
+          day = "六";
           break;
         case 7:
-          local_day = "日";
+          day = "日";
       }
-      // Output message
-      message = `最後更新時間: ${local_fullyear}年${local_month}月${local_date}日${local_hours}時${local_minutes}分${local_seconds}秒 (星期${local_day})<BR>`;
+      // Output message [For Debug Use `${new Date(repo.updated_at)}`]
+      message = `最後更新時間: ${fullyear}年${month}月${date}日${hours}時${minutes}分${seconds}秒 (星期${day}) [GMT+0800 (香港標準時間)]<BR>${new Date(repo.updated_at)}`;
       }
     });
   }
