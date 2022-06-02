@@ -1,5 +1,11 @@
+body {
+    background-color: white;
+}
+
 button {
     background-color: aqua;
-    border: none;
+    border-color: black;
     color: blue;
+    padding: 30px;
+    font-size: large;
 }

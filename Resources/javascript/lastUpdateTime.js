@@ -1,15 +1,19 @@
+const requireRepo = "xupapercup.github.io";
+
 var xhttp = new XMLHttpRequest();
-var message = null;
-var lastUpdateTime = null;
+// Get a reference to the element we want to update
+lastUpdateTime = document.getElementById('lastUpdateTime');
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     let repos = JSON.parse(this.responseText);
     repos.forEach((repo)=>{
-      lastUpdateTime = document.getElementById('lastUpdateTime'),
-      message = `<code>${repo.name}</code>: <em>${new Date(repo.updated_at)}</em><br>`;
-      lastUpdateTime.innerHTML = message;
+      if (repo.name == requireRepo)
+      message = `Last Update Time: <em>${new Date(repo.updated_at)}</em><BR>`;
     });
   }
+  // Update the content of the element with the message
+  lastUpdateTime.innerHTML = message;
 };
-xhttp.open("GET", "https://api.github.com/repos/xupapercup/xupapercup.github.io", true);
+
+xhttp.open("GET", "https://api.github.com/users/xupapercup/repos", true);
 xhttp.send();
