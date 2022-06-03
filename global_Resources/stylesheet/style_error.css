@@ -1,0 +1,49 @@
+body {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+#back{
+    align-items: left;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 7px;
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#back:hover{
+    background-color: aqua;
+    color: black;
+}
+
+#back:active{
+    background-color: darkcyan;
+    color: white;
+}
+
+.lang {
+    margin: 5px;
+    width: 400px;
+    height: 150px;
+    border: none;
+    border-radius: 7px;
+    background-color: greenyellow;
+    color: black;
+    font-size: 55px;
+    cursor: pointer;
+}
+
+.lang:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.lang:active {
+    background-color: darkcyan;
+    color: white;
+}

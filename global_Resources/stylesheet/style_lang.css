@@ -1,16 +1,21 @@
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: white;
+    color: black;
 }
 
 button {
     margin: 5px;
-    width: 360px;
-    height: 50px;
+    width: 400px;
+    height: 150px;
     border: none;
     border-radius: 7px;
     background-color: greenyellow;
     color: black;
-    font-size: 19px;
+    font-size: 55px;
     cursor: pointer;
 }
 
@@ -23,4 +28,3 @@ button:active {
     background-color: darkcyan;
     color: white;
 }
-
