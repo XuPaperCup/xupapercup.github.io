@@ -1,0 +1,100 @@
+body {
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+
+.text {
+    text-align: center;
+}
+
+#back {
+    align-items: left;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 7px;
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#back:hover {
+    background-color: aqua;
+    color: black;
+}
+
+#back:active {
+    background-color: darkcyan;
+    color: white;
+}
+
+#home {
+    width: 85px;
+    height: 70px;
+    border: none;
+    border-radius: 7px;
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#home:hover {
+    background-color: aqua;
+    color: black;
+}
+
+#home:active {
+    background-color: darkcyan;
+    color: white;
+}
+
+#switch_auto {
+    align-items: left;
+    width: 78px;
+    height: 35px;
+    border: none;
+    border-radius: 7px;
+    background-color: gray;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#switch_auto:hover {
+    background-color: aqua;
+    color: black;
+}
+
+#switch_auto:active {
+    background-color: darkcyan;
+    color: white;
+}
+
+#theme {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1A1A1A;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    float: right;
+}
+
+#theme:hover {
+    background-color: aqua;
+    color: black;
+}
+
+#theme:active {
+    background-color: darkcyan;
+    color: white;
+}

@@ -75,3 +75,26 @@ body {
     background-color: darkcyan;
     color: white;
 }
+
+#theme {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    float: right;
+}
+
+#theme:hover {
+    background-color: aqua;
+    color: black;
+}
+
+#theme:active {
+    background-color: darkcyan;
+    color: white;
+}
