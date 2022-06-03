@@ -81,7 +81,7 @@ xhttp.onreadystatechange = function() {
           day = "日";
       }
       // Output message [For Debug Use `${new Date(repo.updated_at)}`]
-      message = `網站最後更新時間: ${fullyear}年${month}月${date}日${hours}時${minutes}分${seconds}秒 (星期${day})</FONT><BR>`;
+      message = `網站最後更新時間(本地時間): ${fullyear}年${month}月${date}日${hours}時${minutes}分${seconds}秒 (星期${day})</FONT><BR>`;
       }
     });
   }
