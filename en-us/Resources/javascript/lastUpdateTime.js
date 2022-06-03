@@ -9,7 +9,7 @@ xhttp.onreadystatechange = function() {
     repos.forEach((repo)=>{
       if (repo.name == requireRepo) {
       // Store Time Data from GitHub API
-      var TimeData = new Date(repo.updated_at);
+      var TimeData = new Date(repo.pushed_at);
       // Process Data
       var date = TimeData.getDate();
       var fullyear = TimeData.getFullYear();
