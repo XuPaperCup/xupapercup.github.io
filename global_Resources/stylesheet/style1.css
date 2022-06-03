@@ -68,6 +68,28 @@ body {
     color: white;
 }
 
+#update{
+    align-items: left;
+    width: 360px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: gray;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+#update:hover{
+    background-color: aqua;
+    color: black;
+}
+
+#update:active{
+    background-color: darkcyan;
+    color: white;
+}
+
 #top{
     align-items: left;
     width: 100px;

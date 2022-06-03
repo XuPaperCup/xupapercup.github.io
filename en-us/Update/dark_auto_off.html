@@ -11,9 +11,10 @@
         <button id="theme" type="button" onclick="window.location.href='light_auto_off.html'"><b><FONT align="center">Light Theme</b><BR>☀</FONT></button>
         
 <div class="text">
-        <FONT size="7"><u>The page you visited is in Building/Update/Maintenance</u></FONT><BR>
-        <FONT size="7">Current Status: Resting</FONT><BR>
-        <FONT size="6">Next Update: MCBE addon Teaching Material (0%)</FONT><BR>
+        <FONT size="7"><u>Update Page - a page for checking Website Update Status</u></FONT><BR>
+        <FONT size="7" color="yellow" id="current_status">Current Status: Loading Data...</FONT><BR>
+        <FONT size="7" color="aqua" id="next_update">Next Update: Loading Data...</FONT><BR>
+        <script type="text/javascript" src="../Resources/javascript/updateSiteData.js"></script>
 <HR>
     <button id="switch_auto" type="button" onclick="window.location.href='dark_auto_on.html'">Turn On</button><FONT size="6" color="gray">This Web Page will</FONT>&ensp;<FONT size="6">NOT</FONT>&ensp;<FONT size="6" color="gray">auto refresh.</FONT><BR>
     <FONT size="6" color="gray">Time elapsed before last status update - </FONT>
@@ -23,6 +24,13 @@
     <FONT size="5">Current Theme: Dark</FONT><BR>
     <div id="lastUpdateTime"><FONT size="5">Getting GitHub API Data...</FONT></div>
     <script type="text/javascript" src="../Resources/javascript/lastUpdateTime.js"></script>
+    <HR>
+    <FONT size="5"><u>Why I am redirected to this Page?</u><BR>
+    You are redirected to this Page because...
+    <UL>
+        <LI>The Web Page you visited is in Build/Update/Maintenance </LI>
+        <LI>You click the Update Page Button from the Home Page</LI>
+    </UL></FONT>
 </div>
 </BODY>
 </HTML>

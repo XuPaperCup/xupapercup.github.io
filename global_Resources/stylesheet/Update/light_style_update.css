@@ -98,3 +98,8 @@ body {
     background-color: darkcyan;
     color: white;
 }
+
+UL {
+    display: table;
+    margin: 0 auto;
+  }
