@@ -1,2 +1,1 @@
-My(XuPaperCup) Website
-Link: https://xupapercup.github.io
+My(XuPaperCup) own Website Link: https://xupapercup.github.io
