@@ -102,4 +102,20 @@ body {
 UL {
     display: table;
     margin: 0 auto;
-  }
+}
+
+#powered {
+    color: #AFAFAF;
+    cursor: pointer;
+    float: right;
+    font-size: 21px;
+    text-decoration-line: none;
+}
+
+#powered:hover {
+    color: orange;
+}
+
+#powered:active {
+    color: darkcyan;
+}

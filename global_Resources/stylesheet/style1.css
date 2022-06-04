@@ -70,7 +70,7 @@ body {
 
 #update{
     align-items: left;
-    width: 360px;
+    width: 227px;
     height: 50px;
     border: none;
     border-radius: 7px;
@@ -78,6 +78,7 @@ body {
     color: white;
     font-size: 19px;
     cursor: pointer;
+    float: right;
 }
 
 #update:hover{
@@ -132,4 +133,20 @@ button:hover {
 button:active {
     background-color: darkcyan;
     color: white;
+}
+
+#powered {
+    color: gray;
+    cursor: pointer;
+    float: right;
+    font-size: 21px;
+    text-decoration-line: none;
+}
+
+#powered:hover {
+    color: blue;
+}
+
+#powered:active {
+    color: darkcyan;
 }
