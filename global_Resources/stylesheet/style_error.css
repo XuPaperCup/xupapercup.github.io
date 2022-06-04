@@ -5,8 +5,9 @@ body {
 }
 
 #back{
-    width: 76px;
-    height: 76px;
+    margin: 0px;
+    width: 77px;
+    height: 77px;
     border: none;
     border-radius: 7px;
     background-color: green;
@@ -26,8 +27,9 @@ body {
 }
 
 #home {
-    width: 76px;
-    height: 76px;
+    margin: 0px;
+    width: 85px;
+    height: 77px;
     border: none;
     border-radius: 7px;
     background-color: green;
