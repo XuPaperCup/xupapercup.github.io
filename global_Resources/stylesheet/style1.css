@@ -24,6 +24,27 @@ body {
     color: white;
 }
 
+#home {
+    width: 76px;
+    height: 76px;
+    border: none;
+    border-radius: 7px;
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#home:hover {
+    background-color: aqua;
+    color: black;
+}
+
+#home:active {
+    background-color: darkcyan;
+    color: white;
+}
+
 #back_top {
     align-items: left;
     width: 110px;
