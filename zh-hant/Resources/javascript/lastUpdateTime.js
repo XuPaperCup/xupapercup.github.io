@@ -77,7 +77,7 @@ xhttp.onreadystatechange = function() {
         case 6:
           day = "六";
           break;
-        case 7:
+        case 0:
           day = "日";
       }
       // Output message [For Debug Use `${new Date(repo.updated_at)}`]
