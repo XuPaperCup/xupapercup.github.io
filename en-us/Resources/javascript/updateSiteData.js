@@ -1,11 +1,14 @@
 // Preset Constant Value
 const current_status_data = "Current Status: Building";
-const next_update_data = "Next Update: zh-hant/404.html (0%)";
+const recent_update_data = "Recent Update: en-us/404.html (100%)";
+const upcoming_change_data = "Upcoming Change: zh-hant/404.html (0%)";
 
 // Get a reference to the element we want to update
 current_status = document.getElementById("current_status");
-next_update = document.getElementById("next_update");
+recent_update = document.getElementById("next_update");
+upcoming_change = document.getElementById("upcoming_change");
 
 // Update the content of the element with the message
 current_status.innerHTML = current_status_data;
-next_update.innerHTML = next_update_data;
+recent_update.innerHTML = recent_update_data;
+upcoming_change.innerHTML = upcoming_change_data;
