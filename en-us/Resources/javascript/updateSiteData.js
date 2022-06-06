@@ -1,6 +1,6 @@
 // Preset Constant Value
 const current_status_data = "Current Status: Building";
-const next_update_data = "Next Update: MCBE addon Teaching Material (1%)";
+const next_update_data = "Next Update: zh-hant/404.html (0%)";
 
 // Get a reference to the element we want to update
 current_status = document.getElementById("current_status");
