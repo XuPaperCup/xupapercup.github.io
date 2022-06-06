@@ -81,7 +81,7 @@ xhttp.onreadystatechange = function() {
           day = "Sunday";
       }
       // Output message [For Debug Use `${new Date(repo.updated_at)}`]
-      message = `Website Last Update Time (Local Time): ${fullyear}/${month}/${date} ${hours}:${minutes}:${seconds} (${day})</FONT><BR>`;
+      message = `Website Last Update Time (Local Time): ${fullyear}/${month}/${date} ${hours}h${minutes}m${seconds}s (${day})</FONT><BR>`;
       }
     });
   }
