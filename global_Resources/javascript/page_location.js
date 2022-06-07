@@ -10,8 +10,6 @@ if (language == "en-us") {
 }
 if (language == "zh-hant") {
     page_location.innerHTML = "請求的頁面目錄: " + page_location_data;
-} else {
-    page_location.innerHTML = "Requested Page Directory: " + page_location_data;
 }
 
 
@@ -29,7 +27,5 @@ if (language == "en-us") {
 }
 if (language == "zh-hant") {
     page_location.innerHTML = "請求的頁面目錄: " + page_location_data;
-} else {
-    page_location.innerHTML = "Requested Page Directory: " + page_location_data;
 }
 }

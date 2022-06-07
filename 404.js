@@ -1,3 +1,4 @@
+var language = "en-us";
 function display_404_in_en_us() {
     // Change Language Value
     var language = "en-us";
