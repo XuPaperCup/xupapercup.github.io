@@ -9,13 +9,13 @@ xhttp.onreadystatechange = function() {
     repos.forEach((repo)=>{
       if (repo.name == requireRepo) {
       // Store Time Data from GitHub API
-      var TimeData = new Date(repo.pushed_at);
+      let TimeData = new Date(repo.pushed_at);
       // Process Data
-      var date = TimeData.getDate();
-      var fullyear = TimeData.getFullYear();
-      var hours = TimeData.getHours();
-      var minutes = TimeData.getMinutes();
-      var seconds = TimeData.getSeconds();
+      let date = TimeData.getDate();
+      let fullyear = TimeData.getFullYear();
+      let hours = TimeData.getHours();
+      let minutes = TimeData.getMinutes();
+      let seconds = TimeData.getSeconds();
       var month = null;
       // Fix Math Month Number
       switch (TimeData.getMonth()) {
