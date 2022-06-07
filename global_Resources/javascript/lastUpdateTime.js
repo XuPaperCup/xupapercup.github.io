@@ -57,31 +57,64 @@ xhttp.onreadystatechange = function() {
           break;
       }
       var day = null;
-      // Change Math Week Number to Chinese Week Number
-      switch (TimeData.getDay()) {
-        case 1:
-          day = "Monday";
-          break;
-        case 2:
-          day = "Tuesday";
-          break;
-        case 3:
-          day = "Wednesday";
-          break;
-        case 4:
-          day = "Thursday";
-          break;
-        case 5:
-          day = "Friday";
-          break;
-        case 6:
-          day = "Saturday";
-          break;
-        case 0:
-          day = "Sunday";
+      // Change Math Week Number to English/Chinese Week Word
+      if (language == "en-us") {
+        switch (TimeData.getDay()) {
+          case 1:
+            day = "Monday";
+            break;
+          case 2:
+            day = "Tuesday";
+            break;
+          case 3:
+            day = "Wednesday";
+            break;
+          case 4:
+            day = "Thursday";
+            break;
+          case 5:
+            day = "Friday";
+            break;
+          case 6:
+            day = "Saturday";
+            break;
+          case 0:
+            day = "Sunday";
+            break;
+        }
       }
-      // Output message [For Debug Use `${new Date(repo.updated_at)}`]
-      message = `Website Last Update Time (Local Time): ${fullyear}/${month}/${date} ${hours}h${minutes}m${seconds}s (${day})</FONT><BR>`;
+      if (language == "zh-hant") {
+        switch (TimeData.getDay()) {
+          case 1:
+            day = "一";
+            break;
+          case 2:
+            day = "二";
+            break;
+          case 3:
+            day = "三";
+            break;
+          case 4:
+            day = "四";
+            break;
+          case 5:
+            day = "五";
+            break;
+          case 6:
+            day = "六";
+            break;
+          case 0:
+            day = "日";
+            break;
+        }
+      }
+      // Output message base on language [For Debug Use `${new Date(repo.updated_at)}`]
+      if (language == "en-us") {
+        message = `Website Last Update Time (Local Time): ${fullyear}/${month}/${date} ${hours}h${minutes}m${seconds}s (${day})</FONT><BR>`;
+      }
+      if (language == "zh-hant") {
+        message = `網站最後更新時間(本地時間): ${fullyear}年${month}月${date}日${hours}時${minutes}分${seconds}秒 (星期${day})</FONT><BR>`;
+      }
       }
     });
   }
