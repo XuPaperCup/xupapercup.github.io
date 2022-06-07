@@ -12,7 +12,8 @@ if (language == "zh-hant") {
     page_location.innerHTML = "請求的頁面目錄: " + page_location_data;
 }
 // Execute in function
-function page_location() {
+
+function page_location_function() {
 // Preset Constant Function
 let page_location_data = window.location
 
