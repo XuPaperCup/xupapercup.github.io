@@ -1,4 +1,4 @@
-// Preset Constant Value
+// Preset Constant Word
 const current_status_data = "Current Status: Building";
 const recent_update_data = "Recent Update: en-us/404.html (100%)";
 const upcoming_change_data = "Upcoming Change: zh-hant/404.js (0%)";
