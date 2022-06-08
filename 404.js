@@ -216,7 +216,7 @@ function display_404_in_zh_hant() {
     let data_line5_data = 'XuPaperCup的網站<BR><a href="https://pages.github.com/" target="_blank" id="powered">由&thinsp;<b>GitHub</b>&thinsp;Pages&thinsp;提供支持</a>';
     let page_location_data_original = "請求的頁面目錄: 讀取數據中...";
     // Preset Constant Word - Button
-    let function_button_data = '<button id="back" type="button" onclick="window.history.back()"><FONT size="2" align="center">Go Back</FONT><BR>⬅</button> <button id="home" type="button" onclick="window.location.href=\'https://xupapercup.github.io/index.html\'"><FONT size="2" align="center">Welcome<BR>Page</FONT><BR>⌂</button>';
+    let function_button_data = '<button id="back" type="button" onclick="window.history.back()"><FONT size="2">返回上一頁</FONT><BR>⬅</button> <button id="home" type="button" onclick="window.location.href=\'https://xupapercup.github.io/index.html\'"><FONT size="2" align="center">回到首頁</FONT><BR>⌂</button>';
     let show_language_button_data = '<input id="lang" type="button" value="Display in English Language" onclick="display_404_in_en_us();">';
     // Get a reference to the element we want to update - Body
     let body_line1 = document.getElementById("body_line1");
