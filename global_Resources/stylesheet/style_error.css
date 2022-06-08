@@ -85,3 +85,25 @@ body {
 #powered:active {
     color: darkcyan;
 }
+
+#lang{
+    align-items: left;
+    width: 360px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: green;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+#lang:hover{
+    background-color: aqua;
+    color: black;
+}
+
+#lang:active{
+    background-color: darkcyan;
+    color: white;
+}

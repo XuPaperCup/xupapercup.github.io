@@ -14,7 +14,7 @@ if (language == "zh-hant") {
 
 
 // Execute in function
-export function page_location_function() {
+function page_location_function() {
 // Preset Constant Function
 let page_location_data = window.location
 

@@ -1,7 +1,7 @@
 // Preset Constant Word
 const current_status_data = "Current Status: Building";
 const recent_update_data = "Recent Update: en-us/404.html (100%)";
-const upcoming_change_data = "Upcoming Change: zh-hant/404.js (70%)";
+const upcoming_change_data = "Upcoming Change: zh-hant/404.js (80%)";
 
 // Get a reference to the element we want to update
 var current_status = document.getElementById("current_status");
