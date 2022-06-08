@@ -1,7 +1,152 @@
+// Default Language
 var language = "en-us";
+// Require import module
+function lastUpdateTime_function() {
+    const requireRepo = "xupapercup.github.io";
+    var xhttp = new XMLHttpRequest();
+    // Get a reference to the element we want to update
+    lastUpdateTime = document.getElementById('lastUpdateTime');
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        let repos = JSON.parse(this.responseText);
+        repos.forEach((repo)=>{
+          if (repo.name == requireRepo) {
+          // Store Time Data from GitHub API
+          let TimeData = new Date(repo.pushed_at);
+          // Process Data
+          let date = TimeData.getDate();
+          let fullyear = TimeData.getFullYear();
+          let hours = TimeData.getHours();
+          let minutes = TimeData.getMinutes();
+          let seconds = TimeData.getSeconds();
+          var month = null;
+          // Fix Math Month Number
+          switch (TimeData.getMonth()) {
+            case 0:
+              month = "1";
+              break;
+            case 1:
+              month = "2";
+              break;
+            case 2:
+              month = "3";
+              break;
+            case 3:
+              month = "4";
+              break;
+            case 4:
+              month = "5";
+              break;
+            case 5:
+              month = "6";
+              break;
+            case 6:
+              month = "7";
+              break;
+            case 7:
+              month = "8";
+              break;
+            case 8:
+              month = "9";
+              break;
+            case 9:
+              month = "10";
+              break;
+            case 10:
+              month = "11";
+              break;
+            case 11:
+              month = "12";
+              break;
+          }
+          var day = null;
+          // Change Math Week Number to English/Chinese Week Word
+          if (language == "en-us") {
+            switch (TimeData.getDay()) {
+              case 1:
+                day = "Monday";
+                break;
+              case 2:
+                day = "Tuesday";
+                break;
+              case 3:
+                day = "Wednesday";
+                break;
+              case 4:
+                day = "Thursday";
+                break;
+              case 5:
+                day = "Friday";
+                break;
+              case 6:
+                day = "Saturday";
+                break;
+              case 0:
+                day = "Sunday";
+                break;
+            }
+          }
+          if (language == "zh-hant") {
+            switch (TimeData.getDay()) {
+              case 1:
+                day = "一";
+                break;
+              case 2:
+                day = "二";
+                break;
+              case 3:
+                day = "三";
+                break;
+              case 4:
+                day = "四";
+                break;
+              case 5:
+                day = "五";
+                break;
+              case 6:
+                day = "六";
+                break;
+              case 0:
+                day = "日";
+                break;
+            }
+          }
+          // Output message base on language [For Debug Use `${new Date(repo.updated_at)}`]
+          if (language == "en-us") {
+            message = `Website Last Update Time (Local Time): ${fullyear}/${month}/${date} ${hours}h${minutes}m${seconds}s (${day})</FONT><BR>`;
+          }
+          if (language == "zh-hant") {
+            message = `網站最後更新時間(本地時間): ${fullyear}年${month}月${date}日${hours}時${minutes}分${seconds}秒 (星期${day})</FONT><BR>`;
+          }
+          }
+        });
+      }
+      // Update the content of the element with the message
+      lastUpdateTime.innerHTML = message;
+    };
+    // Get data from GitHub API
+    xhttp.open("GET", "https://api.github.com/users/xupapercup/repos", true);
+    xhttp.send();
+}
+function page_location_function() {
+    // Preset Constant Function
+    var page_location_data_new = window.location
+    
+    // Get a reference to the element we want to update
+    var page_location = document.getElementById("page_location");
+    
+    // Update the content of the element with the message
+    if (language == "en-us") {
+        page_location.innerHTML = "Requested Page Directory: " + page_location_data_new;
+    }
+    if (language == "zh-hant") {
+        page_location.innerHTML = "請求的頁面目錄: " + page_location_data_new;
+    }
+}
+// 404 function - en-us
 function display_404_in_en_us() {
     // Change Language Value
-    var language = "en-us";
+    language = "en-us";
     // Preset Constant Word - Body
     let body_line1_data = "<u>Error - The Web Page requested does not exist</u>";
     let body_line2_data = "Sorry, we could not found the Web Page or Page Directory that you requested.";
@@ -16,18 +161,18 @@ function display_404_in_en_us() {
     let page_location_data_original = "Requested Page Directory: Loading...";
     let function_button_data = '<button id="back" type="button" onclick="window.history.back()"><FONT size="2" align="center">Go Back</FONT><BR>⬅</button> <button id="home" type="button" onclick="window.location.href=\'https://xupapercup.github.io/index.html\'"><FONT size="2" align="center">Welcome<BR>Page</FONT><BR>⌂</button>';
     // Get a reference to the element we want to update - Body
-    var body_line1 = document.getElementById("body_line1");
-    var body_line2 = document.getElementById("body_line2");
-    var body_line3 = document.getElementById("body_line3");
-    var body_line4 = document.getElementById("body_line4");
+    let body_line1 = document.getElementById("body_line1");
+    let body_line2 = document.getElementById("body_line2");
+    let body_line3 = document.getElementById("body_line3");
+    let body_line4 = document.getElementById("body_line4");
     // Get a reference to the element we want to update - Data
-    var data_line1 = document.getElementById("data_line1");
-    var data_line2 = document.getElementById("data_line2");
-    var data_line3 = document.getElementById("data_line3");
-    var data_line4 = document.getElementById("data_line4");
-    var data_line5 = document.getElementById("data_line5");
-    var page_location = document.getElementById("page_location");
-    var function_button  = document.getElementById("function_button");
+    let data_line1 = document.getElementById("data_line1");
+    let data_line2 = document.getElementById("data_line2");
+    let data_line3 = document.getElementById("data_line3");
+    let data_line4 = document.getElementById("data_line4");
+    let data_line5 = document.getElementById("data_line5");
+    let page_location = document.getElementById("page_location");
+    let function_button  = document.getElementById("function_button");
     // Update the content of the element with the message - Body
     body_line1.innerHTML = body_line1_data;
     body_line2.innerHTML = body_line2_data;
@@ -44,10 +189,10 @@ function display_404_in_en_us() {
     page_location_function();
     function_button.innerHTML = function_button_data;
 }
-
+// 404 function - zh-hant
 function display_404_in_zh_hant() {
     // Change Language Value
-    var language = "zh_hant";
+    language = "zh-hant";
     // Preset Constant Word - Body
     let body_line1_data = "<u>Error - The Web Page requested does not exist</u>";
     let body_line2_data = "Sorry, we could not found the Web Page or Page Directory that you requested.";
@@ -60,20 +205,20 @@ function display_404_in_zh_hant() {
     let data_line4_data = '<div id="lastUpdateTime">網站最後更新時間(本地時間): 讀取GitHub API數據中...</div>';
     let data_line5_data = 'XuPaperCup的網站<BR><a href="https://pages.github.com/" target="_blank" id="powered">由&thinsp;<b>GitHub</b>&thinsp;Pages&thinsp;提供支持</a>';
     let page_location_data_original = "請求的頁面目錄: 讀取數據中...";
-    let function_button_data = '<button id="back" type="button" onclick="window.history.back()"><FONT size="2" align="center"返回上一頁</FONT><BR>⬅</button> <button id="home" type="button" onclick="window.location.href=\'https://xupapercup.github.io/index.html\'"><FONT size="2" align="center">Welcome<BR>Page</FONT><BR>⌂</button>';
+    let function_button_data = '<button id="back" type="button" onclick="window.history.back()"><FONT size="2">返回上一頁</FONT><BR>⬅</button> <button id="home" type="button" onclick="window.location.href=\'https://xupapercup.github.io/index.html\'"><FONT size="2" align="center">回到首頁</FONT><BR>⌂</button>';
     // Get a reference to the element we want to update - Body
-    var body_line1 = document.getElementById("body_line1");
-    var body_line2 = document.getElementById("body_line2");
-    var body_line3 = document.getElementById("body_line3");
-    var body_line4 = document.getElementById("body_line4");
+    let body_line1 = document.getElementById("body_line1");
+    let body_line2 = document.getElementById("body_line2");
+    let body_line3 = document.getElementById("body_line3");
+    let body_line4 = document.getElementById("body_line4");
     // Get a reference to the element we want to update - Data
-    var data_line1 = document.getElementById("data_line1");
-    var data_line2 = document.getElementById("data_line2");
-    var data_line3 = document.getElementById("data_line3");
-    var data_line4 = document.getElementById("data_line4");
-    var data_line5 = document.getElementById("data_line5");
-    var page_location = document.getElementById("page_location");
-    var function_button  = document.getElementById("function_button");
+    let data_line1 = document.getElementById("data_line1");
+    let data_line2 = document.getElementById("data_line2");
+    let data_line3 = document.getElementById("data_line3");
+    let data_line4 = document.getElementById("data_line4");
+    let data_line5 = document.getElementById("data_line5");
+    let page_location = document.getElementById("page_location");
+    let function_button  = document.getElementById("function_button");
     // Update the content of the element with the message - Body
     body_line1.innerHTML = body_line1_data;
     body_line2.innerHTML = body_line2_data;

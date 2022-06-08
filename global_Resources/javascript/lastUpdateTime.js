@@ -128,7 +128,7 @@ xhttp.send();
 
 
 // [Run (again) in a function] - Renew Data Without Refresh Web Page
-function lastUpdateTime_function() {
+export function lastUpdateTime_function() {
   const requireRepo = "xupapercup.github.io";
   var xhttp = new XMLHttpRequest();
   // Get a reference to the element we want to update
