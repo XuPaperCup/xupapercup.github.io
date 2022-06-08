@@ -207,7 +207,7 @@ function display_404_in_zh_hant() {
     let body_line1_data = "<u>錯誤 - 請求的頁面/網頁目錄不存在</u>";
     let body_line2_data = "抱歉，我們找不到所請求的頁面或網頁目錄";
     let body_line3_data = "[請檢查您的網頁目錄和頁面名稱是否存在並且拼寫正確]";
-    let body_line4_data = "單擊返回上一頁或回到首頁來離開此錯誤網頁";
+    let body_line4_data = "點擊返回上一頁或回到首頁來離開此錯誤網頁";
     // Preset Constant Word - Data
     let data_line1_data = "錯誤類型: 找不到網頁";
     let data_line2_data = '錯誤代碼: <a href="https://zh.wikipedia.org/zh-tw/HTTP_404" target="_blank" id="powered" >HTTP 404</a>';
