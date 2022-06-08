@@ -210,10 +210,10 @@ function display_404_in_zh_hant() {
     let body_line4_data = "單擊返回上一頁或回到首頁來離開此錯誤網頁";
     // Preset Constant Word - Data
     let data_line1_data = "錯誤類型: 找不到網頁";
-    let data_line2_data = '錯誤代碼: <a href="https://zh.wikipedia.org/zh-tw/HTTP_404" target="_blank" id="powered">HTML 404</a>';
+    let data_line2_data = '錯誤代碼: <a href="https://zh.wikipedia.org/zh-tw/HTTP_404" target="_blank" id="powered" >HTML 404</a>';
     let data_line3_data = "顯示語言: 繁體中文";
     let data_line4_data = '<div id="lastUpdateTime">網站最後更新時間(本地時間): 讀取GitHub API數據中...</div>';
-    let data_line5_data = 'XuPaperCup的網站<BR><a href="https://pages.github.com/" target="_blank" id="powered">由&thinsp;<b>GitHub</b>&thinsp;Pages&thinsp;提供支持</a>';
+    let data_line5_data = 'XuPaperCup的網站<BR><a href="https://pages.github.com/" target="_blank" id="powered" style="float: none; text-align: center;">由&thinsp;<b>GitHub</b>&thinsp;Pages&thinsp;提供支持</a>';
     let page_location_data_original = "請求的頁面目錄: 讀取數據中...";
     // Preset Constant Word - Button
     let function_button_data = '<button id="back" type="button" onclick="window.history.back()"><FONT size="2">返回上一頁</FONT><BR>⬅</button> <button id="home" type="button" onclick="window.location.href=\'https://xupapercup.github.io/index.html\'"><FONT size="2" align="center">回到首頁</FONT><BR>⌂</button>';
