@@ -151,10 +151,10 @@ function display_404_in_en_us() {
     // Change Language Value
     language = "en-us";
     // Preset Constant Word - Body
-    let body_line1_data = "<u>Error - The Web Page requested does not exist</u>";
+    let body_line1_data = "<u>Error - The Web Page/Page Directory requested does not exist</u>";
     let body_line2_data = "Sorry, we could not found the Web Page or Page Directory that you requested.";
     let body_line3_data = "[Please check your directory and page name is existed and spell correctly]";
-    let body_line4_data = "Click Go Back or Welcome Page for going back to the previous page or welcome page.";
+    let body_line4_data = "Click Go Back or Welcome Page to exit this error page";
     // Preset Constant Word - Data
     let data_line1_data = "Error type: Web Page Not found";
     let data_line2_data = "Error code: HTML 404";
@@ -204,10 +204,10 @@ function display_404_in_zh_hant() {
     // Change Language Value
     language = "zh-hant";
     // Preset Constant Word - Body
-    let body_line1_data = "<u>Error - The Web Page requested does not exist</u>";
-    let body_line2_data = "Sorry, we could not found the Web Page or Page Directory that you requested.";
-    let body_line3_data = "[Please check your directory and page name is existed and spell correctly]";
-    let body_line4_data = "Click Go Back or Welcome Page for going back to the previous page or welcome page.";
+    let body_line1_data = "<u>錯誤 - 請求的頁面/網頁目錄不存在</u>";
+    let body_line2_data = "抱歉，我們找不到所請求的頁面或網頁目錄";
+    let body_line3_data = "[請檢查您的網頁目錄和頁面名稱是否存在並且拼寫正確]";
+    let body_line4_data = "單擊返回上一頁或回到首頁來離開此錯誤網頁";
     // Preset Constant Word - Data
     let data_line1_data = "錯誤類型: 未找到網頁";
     let data_line2_data = "錯誤代碼: HTML 404";
