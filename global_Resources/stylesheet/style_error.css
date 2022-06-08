@@ -73,7 +73,6 @@ body {
 #powered {
     color: gray;
     cursor: pointer;
-    float: right;
     font-size: 21px;
     text-decoration-line: none;
 }
