@@ -5,7 +5,7 @@
     <link rel="icon" type="image/x-icon" href="https://xupapercup.github.io/global_Resources/image/favicon.png">
     <script type="text/javascript" src="https://xupapercup.github.io/404.js"></script>
 </HEAD>
-<BODY>
+<BODY onload="display_404_in_en_us()">
     <div style="text-align: left;" id="function_button"><button id="back" type="button" onclick="window.history.back()"><FONT size="2" align="center">Go Back</FONT><BR>⬅</button> <button id="home" type="button" onclick="window.location.href='https://xupapercup.github.io/index.html'"><FONT size="2" align="center">Welcome<BR>Page</FONT><BR>⌂</button></div>
     <FONT size="7" id="body_line1"><u>Error - The Web Page requested does not exist</u></FONT><BR>
     <FONT size="6" id="body_line2">Sorry, we could not found the Web Page or Page Directory that you requested.</FONT><BR>
@@ -17,8 +17,7 @@
     <FONT size="5" color="gray" id="data_line2">Error code: Loading...</FONT><BR>
     <FONT size="5" id="data_line3">Display Language: Loading...</FONT><BR>
     <FONT size="5" id="data_line4"><div id="lastUpdateTime">Website Last Update Time (Local Time): Getting GitHub API Data...</div></FONT>
-    <FONT size="5" id="show_language_button" style="float: left; text-align: left;"><input id="lang" type="button" value="用繁體中文語言來顯示" onclick="display_404_in_zh_hant();"></FONT>
+    <FONT size="5" style="float: left; text-align: left;" id="show_language_button"><input id="lang" type="button" value="用繁體中文語言來顯示" onclick="display_404_in_zh_hant();"></FONT>
     <FONT size="5" color="#AFAFAF" style="float: right; text-align: right;" id="data_line5">XuPaperCup&apos;s Website<BR><a href="https://pages.github.com/" target="_blank" id="powered">Powered by <b>GitHub</b> Pages</a></FONT>
-    <script type="text/javascript">display_404_in_en_us();</script>
 </BODY>
 </HTML>
