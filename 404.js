@@ -157,7 +157,7 @@ function display_404_in_en_us() {
     let body_line4_data = "Click Go Back or Welcome Page to exit this error page";
     // Preset Constant Word - Data
     let data_line1_data = "Error type: Web Page Not found";
-    let data_line2_data = 'Error code: <a href="https://zh.wikipedia.org/zh-tw/HTTP_404" target="_blank" id="powered" >HTML 404</a>';
+    let data_line2_data = 'Error code: <a href="https://zh.wikipedia.org/zh-tw/HTTP_404" target="_blank" id="powered">HTML 404</a>';
     let data_line3_data = "Display Language: English";
     let data_line4_data = '<div id="lastUpdateTime">Website Last Update Time (Local Time): Getting GitHub API Data...</div>';
     let data_line5_data = 'XuPaperCup&apos;s Website<BR><a href="https://pages.github.com/" target="_blank" id="powered">Powered by <b>GitHub</b> Pages</a>';
