@@ -172,3 +172,17 @@ button:active {
 #powered:active {
     color: darkcyan;
 }
+
+.link {
+    color: blue;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+.link:hover {
+    color: aqua;
+}
+
+.link:active {
+    color: darkcyan;
+}
