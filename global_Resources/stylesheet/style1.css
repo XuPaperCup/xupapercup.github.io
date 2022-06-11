@@ -186,3 +186,8 @@ button:active {
 .link:active {
     color: darkcyan;
 }
+
+#refer_table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
