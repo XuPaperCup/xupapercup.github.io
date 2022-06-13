@@ -12,7 +12,8 @@
 <BODY>
     <div>
     <button id="back" type="button" onclick="window.history.back()"><FONT size="2" align="center">Go Back</FONT><BR>⬅</button>
-    <button id="home" type="button" onclick="window.location.href='../../index_en-us.html'"><FONT size="2" align="center">Home Page</FONT><BR>⌂</button></div>
+    <button id="home" type="button" onclick="window.location.href='../../index_en-us.html'"><FONT size="2" align="center">Home Page</FONT><BR>⌂</button>
+    <button id="view_all" type="button" onclick="window.location.href='Learning_Material_all.html'"><FONT align="center">View All Learning Material Data</FONT></button></div>
 <HR>
     <FONT size="6"><b>MCBE addon - Learning Material</b><BR></FONT>
     <FONT size=5 style="background-color: aqua; color: black">Status: This Web Page is in building progress...</FONT><BR>
@@ -21,10 +22,10 @@
 <HR>
     <FONT size="5">Please select a chapter and a lesson to get the material:</FONT><BR>
     <select name="chapter" id="chapter">
-        <option value="0" selected="selected">--Please Select Chapter--</option>
+        <option value="0" selected="selected">---Please Select Chapter---</option>
     </select>
     <select name="lesson" id="lesson">
-        <option value="0" selected="selected">--Please Select Lesson--</option>
+        <option value="0" selected="selected">---Please Select Lesson---</option>
         <option value="0">(Select Chapter First)</option>
     </select>
     <button onclick="processValue()" id="get_data">Get Data</button>

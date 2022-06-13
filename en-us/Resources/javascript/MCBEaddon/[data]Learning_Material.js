@@ -1,7 +1,13 @@
 function processValue() {
+    // Get droplist value
     let chapterValue = document.getElementById("chapter").value;
     let lessonValue = document.getElementById("lesson").value;
-    let output = null;
+    let output;
+    // Tell user the data is processing
+    output = "Processing your data request...";
+    document.getElementById("output").innerHTML = output;
+    // Use switch and if to process data
+    output = null;
     switch (chapterValue) {
         case "0":
             output = "Please select a valid chapter and lesson!"
@@ -18,5 +24,6 @@ function processValue() {
             }
             break;
     }
+    // Output the result
     document.getElementById("output").innerHTML = output;
 }

@@ -109,3 +109,24 @@ select {
     background-color: darkcyan;
     color: white;
 }
+
+#view_all {
+    width: 310px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: greenyellow;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#view_all:hover {
+    background-color: aqua;
+    color: black;
+}
+
+#view_all:active {
+    background-color: darkcyan;
+    color: white;
+}
