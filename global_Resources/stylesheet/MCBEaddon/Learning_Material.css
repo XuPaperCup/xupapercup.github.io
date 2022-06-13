@@ -47,7 +47,7 @@ body {
     color: white;
 }
 
-#top{
+#top {
     align-items: left;
     width: 100px;
     height: 50px;
@@ -59,12 +59,12 @@ body {
     cursor: pointer;
 }
 
-#top:hover{
+#top:hover {
     background-color: aqua;
     color: black;
 }
 
-#top:active{
+#top:active {
     background-color: darkcyan;
     color: white;
 }
@@ -86,5 +86,26 @@ body {
 }
 
 select {
-    font-size: large;
+    font-size: 21px;
+}
+
+#get_data {
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    background-color: aquamarine;
+    color: black;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+#get_data:hover {
+    background-color: aqua;
+    color: black;
+}
+
+#get_data:active {
+    background-color: darkcyan;
+    color: white;
 }

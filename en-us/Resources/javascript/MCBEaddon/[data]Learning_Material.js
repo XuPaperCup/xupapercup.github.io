@@ -4,17 +4,17 @@ function processValue() {
     let output = null;
     switch (chapterValue) {
         case "0":
-            output = "Please select a chapter and a lesson!"
+            output = "Please select a valid chapter and lesson!"
             break;
         case "Chapter 1":
             if (lessonValue == "0") {
-                output = "Please select a lesson!"
+                output = "Please select a valid lesson!"
             }
             if (lessonValue == "Lesson 1") {
-                output = "ch1L1"
+                output = "Input: ch1-1"
             }
             if (lessonValue == "Lesson 2") {
-                output = "ch1L2"
+                output = "Input: ch1-2"
             }
             break;
     }
