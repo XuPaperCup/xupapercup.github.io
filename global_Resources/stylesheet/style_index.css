@@ -1,0 +1,101 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+#lang{
+    align-items: left;
+    width: 360px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: green;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+#lang:hover{
+    background-color: aqua;
+    color: black;
+}
+
+#lang:active{
+    background-color: darkcyan;
+    color: white;
+}
+
+#update{
+    align-items: left;
+    width: 227px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: gray;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    float: right;
+}
+
+#update:hover{
+    background-color: aqua;
+    color: black;
+}
+
+#update:active{
+    background-color: darkcyan;
+    color: white;
+}
+
+#powered {
+    color: gray;
+    cursor: pointer;
+    float: right;
+    font-size: 21px;
+    text-decoration-line: none;
+}
+
+#powered:hover {
+    color: blue;
+}
+
+#powered:active {
+    color: darkcyan;
+}
+
+.link {
+    color: blue;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+.link:hover {
+    color: aqua;
+}
+
+.link:active {
+    color: darkcyan;
+}
+
+button {
+    margin: 5px;
+    width: 360px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: greenyellow;
+    color: black;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aqua;
+    color: black;
+}
+
+button:active {
+    background-color: darkcyan;
+    color: white;
+}

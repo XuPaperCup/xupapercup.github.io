@@ -1,19 +1,29 @@
 <HTML>
 <HEAD>
     <title>XuPaperCup's Website - MCBE addon Learning Material</title>
-    <link rel="stylesheet" href="../../../global_Resources/stylesheet/style1.css">
+    <link rel="stylesheet" href="../../../global_Resources/stylesheet/MCBEaddon/Learning_Material.css">
     <link rel="icon" type="image/x-icon" href="../../../global_Resources/image/favicon.png">
-    <meta http-equiv="refresh" content="1; url=https://xupapercup.github.io/en-us/Update/light_auto_on.html">
     <script type="text/javascript">
         const language = "en-us";
     </script>
+    <script type="text/javascript" src="../../Resources/javascript/MCBEaddon/[form]Learning_Material.js"></script>
+    <script type="text/javascript" src="../../Resources/javascript/MCBEaddon/[data]Learning_Material.js"></script>
 </HEAD>
 <BODY>
     <div>
     <button id="back" type="button" onclick="window.history.back()"><FONT size="2" align="center">Go Back</FONT><BR>⬅</button>
     <button id="home" type="button" onclick="window.location.href='../../index_en-us.html'"><FONT size="2" align="center">Home Page</FONT><BR>⌂</button></div>
 <HR>
-    <FONT size="5">In Building, you will redirect to update page shortly... <BR><a href="../../Update/light_auto_on.html">Click Here</a> if it is not redirecting.</FONT>
+    <FONT size="5">Please select Chapter and Lesson to get the material: </FONT><BR>
+    <select name="chapter" id="chapter">
+        <option value="0" selected="selected">--Please Select Chapter--</option>
+    </select>
+    <select name="lesson" id="lesson">
+        <option value="0" selected="selected">--Please Select Lesson--</option>
+        <option value="0">(Select Chapter First)</option>
+    </select>
+    <button onclick="processValue()">run</button>
+    <FONT size="5"><p id="output"></p></FONT>
 <HR>
     <FONT size="5">Current Language: English</FONT><BR>
     <FONT size="5"><div id="lastUpdateTime">Website Last Update Time (Local Time): Getting GitHub API Data...</div></FONT>

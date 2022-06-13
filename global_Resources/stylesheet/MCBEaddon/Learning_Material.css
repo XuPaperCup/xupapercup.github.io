@@ -1,0 +1,90 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+#back {
+    margin: 0px;
+    width: 77px;
+    height: 77px;
+    border: none;
+    border-radius: 7px;
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#back:hover {
+    background-color: aqua;
+    color: black;
+}
+
+#back:active {
+    background-color: darkcyan;
+    color: white;
+}
+
+#home {
+    margin: 0px;
+    width: 85px;
+    height: 77px;
+    border: none;
+    border-radius: 7px;
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#home:hover {
+    background-color: aqua;
+    color: black;
+}
+
+#home:active {
+    background-color: darkcyan;
+    color: white;
+}
+
+#top{
+    align-items: left;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: yellowgreen;
+    color: black;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+#top:hover{
+    background-color: aqua;
+    color: black;
+}
+
+#top:active{
+    background-color: darkcyan;
+    color: white;
+}
+
+#powered {
+    color: gray;
+    cursor: pointer;
+    float: right;
+    font-size: 21px;
+    text-decoration-line: none;
+}
+
+#powered:hover {
+    color: blue;
+}
+
+#powered:active {
+    color: darkcyan;
+}
+
+select {
+    font-size: large;
+}
