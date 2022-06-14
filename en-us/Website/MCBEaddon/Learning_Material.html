@@ -16,7 +16,7 @@
     <button id="view_all" type="button" onclick="window.location.href='Learning_Material_all.html'"><FONT align="center">View All Learning Material Data</FONT></button></div>
 <HR>
     <FONT size="6"><b>MCBE addon - Learning Material</b><BR></FONT>
-    <FONT size=5 style="background-color: aqua; color: black">Status: This Web Page is in building progress...</FONT><BR>
+    <FONT size=5 style="background-color: aqua; color: black">Status: This Web Page is in beta2</FONT><BR>
     <FONT size=5 style="background-color: purple; color: white">Notice: You are now viewing the <b>beta2 version</b> of this Web Page.</FONT><BR>
 <HR>
     <FONT size="5">Please select a chapter and a lesson to get the material:</FONT><BR>
@@ -24,8 +24,8 @@
         <option value="0" selected="selected" onchange="">---Please Select Chapter---</option>
     </select>
     <select name="lesson" id="lesson">
-        <option value="0" selected="selected">---Please Select Lesson---</option>
-        <option value="0">(Select Chapter First)</option>
+        <option value="1" selected="selected">(Select Chapter First)</option>
+        <option value="2">---Please Select Lesson---</option>
     </select>
     <button onclick="processValue()" id="get_data">Get Data</button>
     <FONT size="5"><p id="output"></p></FONT>

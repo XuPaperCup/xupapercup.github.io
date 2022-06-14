@@ -4,7 +4,7 @@ function processValue() {
     let lessonValue = document.getElementById("lesson").value;
     let output;
     // Tell user the data is processing
-    output = `<>Processing your data request...
+    output = `Processing your data request...<BR>
     (If it takes too long to process, try to refresh the Web Page and Get Data again.)`;
     document.getElementById("output").innerHTML = output;
     // Use switch and if to process data
@@ -16,7 +16,7 @@ function processValue() {
             </TABLE>`
             break;
         case "Chapter 1":
-            if (lessonValue == "0") {
+            if (lessonValue == "1||2") {
                 output = `<TABLE>
                 <tr><td class="warning">Please select a valid lesson!</td></tr>
                 </TABLE>`
