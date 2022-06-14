@@ -3,14 +3,15 @@ let chapterObject = {
 }
 
 window.onload = function() {
-    var chapterSel = document.getElementById("chapter");
-    var lessonSel = document.getElementById("lesson");
+    let chapterSel = document.getElementById("chapter");
+    let lessonSel = document.getElementById("lesson");
     for (var x in chapterObject) {
         chapterSel.options[chapterSel.options.length] = new Option(x, x);
     }
     chapterSel.onchange = function() {
-        //Empty Lesson dropdown
+        //Empty Lesson dropdown and Output
         lessonSel.length = 2;
+        document.getElementById("output").innerHTML = ""
         //Display correct values
         var y = chapterObject[this.value];
         for (
@@ -21,4 +22,13 @@ window.onload = function() {
         lessonSel.options[lessonSel.options.length] = new Option(y[i], y[i]);
         }
     }
+    lessonSel.onchange = function() {
+        //Empty Output
+        document.getElementById("output").innerHTML = ""
+    }
+}
+
+window.onbeforeunload = function() {
+    document.getElementById("chapter").selectedIndex = -1;
+    document.getElementById("lesson").selectedIndex = -1;
 }
