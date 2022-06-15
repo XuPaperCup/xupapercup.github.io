@@ -111,7 +111,7 @@ select {
 }
 
 #view_all {
-    width: 310px;
+    width: 230px;
     height: 50px;
     border: none;
     border-radius: 7px;
@@ -176,6 +176,28 @@ td {
 }
 
 #index:active {
+    background-color: darkcyan;
+    color: white;
+}
+
+#top{
+    align-items: left;
+    width: 123px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: yellowgreen;
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#top:hover{
+    background-color: aqua;
+    color: black;
+}
+
+#top:active{
     background-color: darkcyan;
     color: white;
 }
