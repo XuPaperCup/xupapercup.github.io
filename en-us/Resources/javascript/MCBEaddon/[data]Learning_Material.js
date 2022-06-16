@@ -59,7 +59,30 @@ function processValue() {
             </TABLE>`;
             }
             if (lessonValue == "Lesson 2") {
-                output = `Currently there is no data stored here, you can check back later.`
+                output =
+            `<TABLE>
+                <tr valign="middle">
+                    <th>Chapter/Lesson</th>
+                    <th>MCBE version</th>
+                    <th>Lesson Publish Date</th>
+                    <th>Download Source</th>
+                    <th>File Size</th></tr>
+                <tr valign="middle">
+                    <td>Basic Chapter 1 Lesson 2</td>
+                    <td>v1.19.0</td>
+                    <td>In Making Progress...</td>
+                    <td align="center"><a href="https://github.com/XuPaperCup/MCBEaddon_learn/releases/download/basic_ch1-2/basic_ch1-2.zip" target="_blank"><button type="button" id="index">GitHub</button></a></td>
+                    <td>940 Bytes</td></tr>
+                </TABLE><TABLE>
+                <tr valign="top">
+                    <th align="left">Reference Video By XuPaperCup in Youtube</th>
+                    <th>Lesson Name</th>
+                    <th>Lesson Objective</th></tr>
+                <tr valign="top">
+                    <td align="left">In Making Progress...</td>
+                    <td>Addon Base Pack</td>
+                    <td>In Making Progress...</td></tr>
+            </TABLE>`
             }
             break;
     }
