@@ -5,7 +5,7 @@ body {
 
 #lang{
     align-items: left;
-    width: 360px;
+    width: 260px;
     height: 50px;
     border: none;
     border-radius: 7px;
@@ -27,7 +27,7 @@ body {
 
 #update{
     align-items: left;
-    width: 227px;
+    width: 260px;
     height: 50px;
     border: none;
     border-radius: 7px;
@@ -35,7 +35,6 @@ body {
     color: white;
     font-size: 19px;
     cursor: pointer;
-    float: right;
 }
 
 #update:hover{
@@ -81,12 +80,12 @@ body {
 button {
     margin: 5px;
     width: 360px;
-    height: 50px;
+    height: 100px;
     border: none;
     border-radius: 7px;
     background-color: greenyellow;
     color: black;
-    font-size: 19px;
+    font-size: 30px;
     cursor: pointer;
 }
 
