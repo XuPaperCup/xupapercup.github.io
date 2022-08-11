@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+#powered {
+    color: gray;
+    cursor: pointer;
+    font-size: 21px;
+    text-decoration-line: none;
+}
+
+#powered:hover {
+    color: blue;
+}
+
+#powered:active {
+    color: darkcyan;
+}
