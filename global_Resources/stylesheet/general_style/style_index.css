@@ -82,3 +82,19 @@ button:active {
     background-color: darkcyan;
     color: white;
 }
+
+#powered {
+    color: gray;
+    cursor: pointer;
+    float: middle;
+    font-size: 21px;
+    text-decoration-line: none;
+}
+
+#powered:hover {
+    color: blue;
+}
+
+#powered:active {
+    color: darkcyan;
+}
