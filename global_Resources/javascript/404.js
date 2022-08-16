@@ -8,7 +8,7 @@ function display_404_in_en_us() {
     let body_line1_data = "<u>Error - The Web Page/Page Directory requested does not exist</u>";
     let body_line2_data = "Sorry, we could not found the Web Page or Page Directory that you requested.";
     let body_line3_data = "[Please check your directory and page name is existed and spell correctly]";
-    let body_line4_data = "Click Go Back or Welcome Page to exit this error page";
+    let body_line4_data = "Click Go Back or Welcome Page to exit this error page<BR><FONT size=\"5\" style=\"background-color: gray; color: white\">Got a problem? Ask them in Home Page -> Miscellaneous -> Report Website Issue(s).</FONT>";
     // Preset Constant Word - Data
     let data_line1_data = "Error type: Web Page Not found";
     let data_line2_data = 'Error code: <a href="https://zh.wikipedia.org/zh-tw/HTTP_404" target="_blank" id="powered">HTTP 404</a>';
