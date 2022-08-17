@@ -1,4 +1,3 @@
----
 name: Suggestion
 about: Suggest an idea for the website
 title: "[SUGGEST] <title>"
