@@ -1,4 +1,4 @@
-name: suggestion
+name: "Suggestion"
 description: Suggest an idea for the website
 labels: enhancement
 title: "[SUGGEST] <title>"
