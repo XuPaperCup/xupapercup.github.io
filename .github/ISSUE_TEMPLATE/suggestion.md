@@ -1,12 +1,8 @@
 ---
 name: Suggestion
 about: Suggest an idea for the website
-title: "[suggest]"
+title: "[SUGGEST] <title>"
 labels: enhancement
-assignees: ''
-
----
-
 body:
   - type: dropdown
     attributes:
