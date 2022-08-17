@@ -2,6 +2,7 @@ name: Suggestion
 about: Suggest an idea for the website
 title: "[SUGGEST] <title>"
 labels: enhancement
+
 body:
   - type: dropdown
     attributes:
@@ -13,6 +14,7 @@ body:
         - Miscellaneous
         - Others
       required: true
+  
  - type: textarea
     attributes:
       label: Details
