@@ -4,6 +4,9 @@ about: Suggest an idea for the website
 title: "[suggest]"
 labels: enhancement
 assignees: ''
+
+---
+
 body:
   - type: dropdown
     attributes:
