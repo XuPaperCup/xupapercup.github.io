@@ -1,12 +1,12 @@
 name: "Suggestion"
-description: Suggest an idea for the website
-labels: enhancement
+description: "Suggest an idea for the website"
+labels: "enhancement"
 title: "[SUGGEST] <title>"
 
 body:
   - type: dropdown
     attributes:
-      label: The suggestion is related to? (You can choose more than one)
+      label: "The suggestion is related to? (You can choose more than one)"
       multiple: true
       options:
         - Minecraft Bedrock Edition
@@ -17,7 +17,7 @@ body:
   
  - type: textarea
     attributes:
-      label: Details
-      placeholder: Write your suggestion details here
+      label: "Details"
+      placeholder: "Write your suggestion details here""
     validations:
       required: true
