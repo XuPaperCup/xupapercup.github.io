@@ -1,7 +1,7 @@
 // Preset Constant Word
-const current_status_data = "Current Status: Finish Building";
-const recent_update_data = "Recent Update: en-us/MCBE addon Learning Material (100%, official version is out!)";
-const upcoming_change_data = "Upcoming Change: Reorder en-us Index Wedsite Layout (100%)";
+const current_status_data = "Current Status: Website Avaliable to use";
+const recent_update_data = "Recent Update: Reorder en-us Index Wedsite Layout (100%)";
+const upcoming_change_data = "Upcoming Change: Reorder zh-hant Index Wedsite Layout (100%)";
 
 // Get a reference to the element we want to update
 var current_status = document.getElementById("current_status");
