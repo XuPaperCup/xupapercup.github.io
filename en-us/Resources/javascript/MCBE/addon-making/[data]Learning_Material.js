@@ -49,7 +49,7 @@ function processValue() {
                     <td>Not applicable</td></tr>
                 </TABLE><TABLE>
                 <tr valign="top">
-                    <th align="left">Reference Video By XuPaperCup in Youtube</th>
+                    <th align="left">Reference Video</th>
                     <th>Lesson Name</th>
                     <th>Lesson Objective</th></tr>
                 <tr valign="top">
@@ -75,7 +75,7 @@ function processValue() {
                     <td>940 Bytes</td></tr>
                 </TABLE><TABLE>
                 <tr valign="top">
-                    <th align="left">Reference Video By XuPaperCup in Youtube</th>
+                    <th align="left">Reference Video</th>
                     <th>Lesson Name</th>
                     <th>Lesson Objective</th></tr>
                 <tr valign="top">
