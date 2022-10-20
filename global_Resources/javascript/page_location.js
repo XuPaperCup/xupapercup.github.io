@@ -4,10 +4,10 @@ let page_location_data = window.location
 var page_location = document.getElementById("page_location");
 // Update the content of the element with the message
 if (language == "en-us") {
-    page_location.innerHTML = "Requested Page Directory: " + page_location_data;
+    page_location.innerHTML = `Requested Page Directory: ${page_location_data}`;
 }
 if (language == "zh-hant") {
-    page_location.innerHTML = "請求的頁面目錄: " + page_location_data;
+    page_location.innerHTML = `請求的頁面目錄: ${page_location_data}`;
 }
 
 // Execute in function
@@ -18,9 +18,9 @@ let page_location_data = window.location
 var page_location = document.getElementById("page_location");
 // Update the content of the element with the message
 if (language == "en-us") {
-    page_location.innerHTML = "Requested Page Directory: " + page_location_data;
+    page_location.innerHTML = `Requested Page Directory: ${page_location_data}`;
 }
 if (language == "zh-hant") {
-    page_location.innerHTML = "請求的頁面目錄: " + page_location_data;
+    page_location.innerHTML = `請求的頁面目錄: ${page_location_data}`;
 }
 }
