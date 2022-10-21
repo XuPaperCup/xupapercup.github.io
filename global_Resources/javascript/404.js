@@ -17,7 +17,7 @@ function display_404_in_en_us() {
     let data_line5_data = 'XuPaperCup&apos;s Website<BR><a href="https://github.com/XuPaperCup/xupapercup.github.io" target="_blank" id="powered">Build in <b>GitHub</b></a>';
     let page_location_data_original = "Requested Page Directory: Loading...";
     // Preset Constant Word - Button
-    let function_button_data = '<button id="back" type="button" onclick="window.history.back()"><FONT size="2" align="center">Go Back</FONT><BR>⬅</button> <button id="home" type="button" onclick="window.location.href=\'https://xupapercup.github.io/index.html\'"><FONT size="2" align="center">Welcome<BR>Page</FONT><BR>⌂</button>';
+    let function_button_data = '<button id="back" type="button" onclick="window.history.back()"><FONT size="2" align="center">Go Back</FONT><BR>⬅</button> <button id="home" type="button" onclick="window.location.href=\'https://xupapercup.github.io/index.html\'"><FONT size="2" align="center">Welcome Page</FONT><BR>⌂</button>';
     let show_language_button_data = '<input id="lang" type="button" value="用繁體中文語言來顯示" onclick="display_404_in_zh_hant();">';
     // Get a reference to the element we want to update - Body
     let body_line1 = document.getElementById("body_line1");
