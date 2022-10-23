@@ -6,11 +6,12 @@
     <title>XuPaperCup's Website - MCBE addon Learning Material</title>
     <link rel="stylesheet" href="../../../../global_Resources/stylesheet/MCBE/addon/Learning_Material.css">
     <link rel="icon" type="image/x-icon" href="../../../../global_Resources/favicon.png">
-    <script type="text/javascript">
+    <SCRIPT type="text/javascript">
         const language = "en-us";
     </script>
-    <script type="text/javascript" src="../../../Resources/javascript/MCBE/addon-making/[form]Learning_Material.js"></script>
-    <script type="text/javascript" src="../../../Resources/javascript/MCBE/addon-making/[data]Learning_Material.js"></script>
+    <SCRIPT type="text/javascript" src="./[form]Learning_Material.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="./[data]Learning_Material.js"></SCRIPT>
+    <SCRIPT type="module" src="../../../bottomFrame.js" defer></SCRIPT>
 </head>
 <body>
     <div>
@@ -31,7 +32,11 @@
         <option value="2">---Please Select Lesson---</option>
     </select>
     <button onclick="processValue()" id="get_data">Get Data</button>
-    <FONT size="5"><p id="output"></p></FONT>
-    <iframe src="../../../bottom_frame.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+    <FONT size="5"><p id="output"></p></FONT><BR>
+    <p id="bottom_frame">
+    <SCRIPT type="module">
+        import { bottomFrame } from '../../../bottomFrame.js'
+        bottomFrame();
+    </SCRIPT>
 </body>
 </html>
