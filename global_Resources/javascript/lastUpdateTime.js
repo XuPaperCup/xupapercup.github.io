@@ -110,13 +110,14 @@ function lastUpdateTime(message) {
         // Output message base on language [For Debug Use `${new Date(repo.updated_at)}`]
         if (language == "en-us") {
           message(`Website Last Update Time (Local Time): ${fullyear}/${month}/${date} ${hours}h${minutes}m${seconds}s (${day})</FONT><BR>`);
+          return;
         }
         if (language == "zh-hant") {
           message(`網站最後更新時間(本地時間): ${fullyear}年${month}月${date}日${hours}時${minutes}分${seconds}秒 (星期${day})</FONT><BR>`);
+          return;
         }
         }
       });
-      return;
     };
   };
   // Get data from GitHub API
