@@ -1,15 +1,15 @@
-// [Export function] - Renew Data Without Refresh Web Page
-function lastUpdateTime(message) {
+// Legacy xhr Module - [lastUpdateTime]
+const lastUpdateTime = () => new Promise(function(resolve) {
   const requireRepo = "xupapercup.github.io";
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
+  const xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       let repos = JSON.parse(this.responseText);
       repos.forEach((repo) => {
         if (repo.name == requireRepo) {
         // Store Time Data from GitHub API
         let TimeData = new Date(repo.pushed_at);
-        // Process Data
+        // Define Data Variable
         let date = TimeData.getDate();
         let fullyear = TimeData.getFullYear();
         let hours = TimeData.getHours();
@@ -56,8 +56,8 @@ function lastUpdateTime(message) {
             break;
         }
         var day = null;
-        // Change Math Week Number to English/Chinese Week Word
-        if (language == "en-us") {
+        //  Convert Math Week Number to English/Chinese Week Word
+        if (language === "en-us") {
           switch (TimeData.getDay()) {
             case 1:
               day = "Monday";
@@ -82,7 +82,7 @@ function lastUpdateTime(message) {
               break;
           }
         }
-        if (language == "zh-hant") {
+        if (language === "zh-hant") {
           switch (TimeData.getDay()) {
             case 1:
               day = "一";
@@ -107,22 +107,20 @@ function lastUpdateTime(message) {
               break;
           }
         }
-        // Output message base on language [For Debug Use `${new Date(repo.updated_at)}`]
+        // Return output base on language [For Debug Use `${new Date(repo.updated_at)}`]
         if (language == "en-us") {
-          message(`Website Last Update Time (Local Time): ${fullyear}/${month}/${date} ${hours}h${minutes}m${seconds}s (${day})</FONT><BR>`);
-          return;
+          return resolve(`Website Last Update Time (Local Time): ${fullyear}/${month}/${date} ${hours}h${minutes}m${seconds}s (${day})</FONT><BR>`);
         }
         if (language == "zh-hant") {
-          message(`網站最後更新時間(本地時間): ${fullyear}年${month}月${date}日${hours}時${minutes}分${seconds}秒 (星期${day})</FONT><BR>`);
-          return;
+          return resolve(`網站最後更新時間(本地時間): ${fullyear}年${month}月${date}日${hours}時${minutes}分${seconds}秒 (星期${day})</FONT><BR>`);
         }
         }
       });
     };
   };
   // Get data from GitHub API
-  xhttp.open("GET", "https://api.github.com/users/xupapercup/repos", true);
-  xhttp.send();
-}
-// Export function and message to be used
+  xhr.open("GET", "https://api.github.com/users/xupapercup/repos", true);
+  xhr.send();
+});
+// Export function to be used
 export { lastUpdateTime };
