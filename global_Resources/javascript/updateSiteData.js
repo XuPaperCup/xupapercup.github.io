@@ -1,7 +1,7 @@
 // Preset Constant Word
 const current_status_data = "Current Status: Website Avaliable to use";
 const recent_update_data = "Recent Update: Reorder zh-hant Index Wedsite Layout (100%)";
-const upcoming_change_data = "Upcoming Change: Bottom Frame Optimization (50%)";
+const upcoming_change_data = "Upcoming Change: Bottom Frame Optimization (75%)";
 
 // Get a reference to the element we want to update
 var current_status = document.getElementById("current_status");
