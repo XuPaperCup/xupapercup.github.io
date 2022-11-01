@@ -18,16 +18,22 @@
         <FONT size="7" color="darkorange" id="current_status">Current Status: Loading Data...</FONT><BR>
         <FONT size="7" color="blue" id="recent_update">Recent Update: Loading Data...</FONT><BR>
         <FONT size="7" color="blue" id="upcoming_change">Upcoming Change: Loading Data...</FONT><BR>
-        <script type="text/javascript" src="../../global_Resources/javascript/updateSiteData.js"></script>
+        <script type="text/javascript" src="../../global_Resources/javascript/library/updateSiteData.js"></script>
 <HR>
     <button id="switch_auto" type="button" onclick="window.location.href='light_auto_on.html'">Turn On</button><FONT size="6" color="gray">This Web Page will</FONT>&ensp;<FONT size="6">NOT</FONT>&ensp;<FONT size="6" color="gray">auto refresh.</FONT><BR>
     <FONT size="6" color="gray">Time elapsed after last status update - </FONT>
     <FONT size="6"><label id="countup_minutes">00</label>m<label id="countup_seconds">00</label>s
-    <script type="text/javascript" src="../../global_Resources/javascript/countup_timer.js"></script></FONT><BR>
+    <script type="text/javascript" src="../../global_Resources/javascript/library/countup_timer.js"></script></FONT><BR>
     <FONT size="5">Current Language: English</FONT><BR>
     <FONT size="5">Current Theme: Light</FONT><BR>
     <FONT size="6"><div id="lastUpdateTime">Website Last Update Time (Local Time): Getting GitHub API Data...</div></FONT>
-    <script type="text/javascript" src="../../global_Resources/javascript/lastUpdateTime.js"></script>
+    <!--Start of Entry Code [Old Tag Support]-->
+    <script type="module">
+        import { lastUpdateTime } from '../../global_Resources/javascript/module/secondary/lastUpdateTime.js';
+        let updateTimeMsg = await lastUpdateTime();
+        document.getElementById("lastUpdateTime").innerHTML = updateTimeMsg;
+    </script>
+    <!--Start of Entry Code [Old Tag Support]-->
     <HR>
     <FONT size="5"><u>Why I am redirected to this Page?</u><BR>
     You are redirected to this Page because...
