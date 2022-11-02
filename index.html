@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-HK">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,13 @@
     <button type="button" onclick="window.location.href='zh-hant/index.html'">繁體中文</button><BR>
 <HR>
     <FONT size="5"><div id="lastUpdateTime">Website Last Update Time (Local Time): Getting GitHub API Data...</div></FONT><BR>
-    <script type="text/javascript" src="global_Resources/javascript/lastUpdateTime.js"></script>
+    <!--Start of Entry Code [Old Tag Support]-->
+    <script type="module">
+        import { lastUpdateTime } from './global_Resources/javascript/module/secondary/lastUpdateTime.js';
+        let updateTimeMsg = await lastUpdateTime();
+        document.getElementById("lastUpdateTime").innerHTML = updateTimeMsg;
+    </script>
+    <!--End of Entry Code [Old Tag Support]-->
     <FONT size="5">Ways to access my website:<a href="https://xupapercup.github.io/" target="_blank" id="powered"><b>&thinsp;Github[Primary]</b></a>/<a href="https://xupapercup.netlify.app/" target="_blank" id="powered"><b>Netlify[Secondary]</b></a></FONT><BR>
     <FONT size="5" color="#AFAFAF" style="float: none; text-align: center;">XuPaperCup's Website, view via <b>computer device</b> for best experience.<BR>
     Since 2022, <FONT size="4" color="#AFAFAF" style="float: none; text-align: center;">Website Designer & Coder: XuPaperCup</FONT><BR>

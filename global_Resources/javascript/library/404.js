@@ -1,14 +1,14 @@
-// Default Language
-var language = "en-us";
+import { main } from '../main.js';
+import { lastUpdateTime } from '../module/secondary/lastUpdateTime.js';
 // 404 function - en-us
-function display_404_in_en_us() {
+export async function display_404_in_en_us() {
     // Change Language Value
     language = "en-us";
     // Preset Constant Word - Body
     let body_line1_data = "<u>Error - The Web Page/Page Directory requested does not exist</u>";
     let body_line2_data = "Sorry, we could not found the Web Page or Page Directory that you requested.";
     let body_line3_data = "[Please check your directory and page name exist and spell correctly]";
-    let body_line4_data = "Click Go Back or Welcome Page to exit this error page<BR><FONT size=\"5\" style=\"background-color: gray; color: white\">Got a problem? Ask them in Home Page➡Miscellaneous➡Report Website Issue(s).</FONT>";
+    let body_line4_data = "Click Go Back or Welcome Page to exit this error page<BR><FONT size=\"5\" style=\"background-color: gray; color: white\">Got a problem? Ask them in Home Page➡Miscellaneous➡Report Website Issue(s)</FONT>";
     // Preset Constant Word - Data
     let data_line1_data = "Error type: Web Page Not found";
     let data_line2_data = 'Error code: <a href="https://en.wikipedia.org/wiki/HTTP_404" target="_blank" id="powered">HTTP 404</a>';
@@ -18,7 +18,7 @@ function display_404_in_en_us() {
     let page_location_data_original = "Requested Page Directory: Loading...";
     // Preset Constant Word - Button
     let function_button_data = '<button id="back" type="button" onclick="window.history.back()"><FONT size="2" align="center">Go Back</FONT><BR>⬅</button> <button id="home" type="button" onclick="window.location.href=\'https://xupapercup.github.io/index.html\'"><FONT size="2" align="center">Welcome Page</FONT><BR>⌂</button>';
-    let show_language_button_data = '<input id="lang" type="button" value="用繁體中文語言來顯示" onclick="display_404_in_zh_hant();">';
+    let show_language_button_data = '<input id="lang" type="button" value="用繁體中文語言來顯示">';
     // Get a reference to the element we want to update - Body
     let body_line1 = document.getElementById("body_line1");
     let body_line2 = document.getElementById("body_line2");
@@ -44,16 +44,23 @@ function display_404_in_en_us() {
     data_line2.innerHTML = data_line2_data;
     data_line3.innerHTML = data_line3_data;
     data_line4.innerHTML = data_line4_data;
-    lastUpdateTime_function();
     data_line5.innerHTML = data_line5_data;
     page_location.innerHTML = page_location_data_original;
-    page_location_function();
     // Update the content of the element with the message - Button
     function_button.innerHTML = function_button_data;
     show_language_button.innerHTML = show_language_button_data;
+    main();
+    // Entry Code [Old Tag Support]
+        let updateTimeMsg = await lastUpdateTime();
+        document.getElementById("lastUpdateTime").innerHTML = updateTimeMsg;
+    // Change Language
+    const lang = document.getElementById("lang");
+    lang.addEventListener("click", ()=>{
+        display_404_in_zh_hant();
+    })
 }
 // 404 function - zh-hant
-function display_404_in_zh_hant() {
+export async function display_404_in_zh_hant() {
     // Change Language Value
     language = "zh-hant";
     // Preset Constant Word - Body
@@ -70,7 +77,7 @@ function display_404_in_zh_hant() {
     let page_location_data_original = "請求的頁面目錄: 讀取數據中...";
     // Preset Constant Word - Button
     let function_button_data = '<button id="back" type="button" onclick="window.history.back()"><FONT size="2">返回上一頁</FONT><BR>⬅</button> <button id="home" type="button" onclick="window.location.href=\'https://xupapercup.github.io/index.html\'"><FONT size="2" align="center">回到首頁</FONT><BR>⌂</button>';
-    let show_language_button_data = '<input id="lang" type="button" value="Display in English Language" onclick="display_404_in_en_us();">';
+    let show_language_button_data = '<input id="lang" type="button" value="Display in English Language">';
     // Get a reference to the element we want to update - Body
     let body_line1 = document.getElementById("body_line1");
     let body_line2 = document.getElementById("body_line2");
@@ -96,11 +103,18 @@ function display_404_in_zh_hant() {
     data_line2.innerHTML = data_line2_data;
     data_line3.innerHTML = data_line3_data;
     data_line4.innerHTML = data_line4_data;
-    lastUpdateTime_function();
     data_line5.innerHTML = data_line5_data;
     page_location.innerHTML = page_location_data_original;
-    page_location_function();
     // Update the content of the element with the message - Button
     function_button.innerHTML = function_button_data;
     show_language_button.innerHTML = show_language_button_data;
+    main();
+    // Entry Code [Old Tag Support]
+    let updateTimeMsg = await lastUpdateTime();
+    document.getElementById("lastUpdateTime").innerHTML = updateTimeMsg;
+    const lang = document.getElementById("lang");
+    // Change Language
+    lang.addEventListener("click", ()=>{
+        display_404_in_en_us();
+    })
 }
