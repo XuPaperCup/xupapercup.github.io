@@ -6,6 +6,7 @@
     <title>XuPaperCup's Website - Home Page</title>
     <link rel="stylesheet" href="../global_Resources/stylesheet/general_style/style_index.css">
     <link rel="icon" type="image/x-icon" href="../global_Resources/favicon.png">
+    <!--Set Website Language Code-->
     <script type="text/javascript">
         const language = "en-us";
     </script>
@@ -37,12 +38,12 @@
     <FONT size="5">Current Language: English</FONT><BR>
     <FONT size="5"><div id="lastUpdateTime">Website Last Update Time (Local Time): Getting GitHub API Data...</div></FONT>
     <!--Start of Entry Code [Old Tag Support]-->
-    <script type="module">
-        import { lastUpdateTime } from '../global_Resources/javascript/module/secondary/lastUpdateTime.js';
-        let updateTimeMsg = await lastUpdateTime();
-        document.getElementById("lastUpdateTime").innerHTML = updateTimeMsg;
-    </script>
-    <!--Start of Entry Code [Old Tag Support]-->
+        <script type="module">
+            import { lastUpdateTime } from '../global_Resources/javascript/module/secondary/lastUpdateTime.js';
+            let updateTimeMsg = await lastUpdateTime();
+            document.getElementById("lastUpdateTime").innerHTML = updateTimeMsg;
+        </script>
+    <!--End of Entry Code [Old Tag Support]-->
     <FONT size="5" style="float: left; text-align: left;">Ways to access this website:<a href="https://xupapercup.github.io/" target="_blank" class="link"><b>&thinsp;Github[Primary]</b></a>/<a href="https://xupapercup.netlify.app/" target="_blank" class="link"><b>Netlify[Secondary]</b></a></FONT><BR>
     <FONT size="5" style="background-color: gray; color: white">Got a problem or suggestion? Tell them in Home Page➡Miscellaneous➡Report Website Issue(s)!</FONT><BR>
     <FONT size="5" color="#AFAFAF" style="float: right; text-align: right;">XuPaperCup's Website, Since 2022<BR>
