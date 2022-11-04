@@ -1,33 +1,39 @@
-<HTML>
-    <HEAD>
-    <title>XuPaperCup's Website - Update Page (Auto 30s off)</title>
-    <link rel="stylesheet" href="../../global_Resources/stylesheet/Update/light_style_update.css">
-    <link rel="icon" type="image/x-icon" href="../../global_Resources/favicon.png">
-    <script type="text/javascript">
-        const language = "en-us";
-    </script>
-    </HEAD>
-    
-    <BODY>
-        <button id="back" type="button" onclick="window.history.back()"><FONT size="2" align="center">Go Back</FONT><BR>⬅</button>
-        <button id="home" type="button" onclick="window.location.href='../index.html'"><FONT size="2" align="center">Home Page</FONT><BR>⌂</button>
-        <button id="theme" type="button" onclick="window.location.href='dark_auto_off.html'"><b><FONT align="center">Dark Theme</b><BR>☽</FONT></button>
-
-<div class="text">
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>XuPaperCup's Website - Update Page (Auto 30s off) - Light Theme</title>
+        <link rel="stylesheet" href="../../global_Resources/stylesheet/Update/light_style_update.css">
+        <link rel="icon" type="image/x-icon" href="../../global_Resources/favicon.png">
+        <!--Set Website Language Code-->
+        <script type="text/javascript">
+            const language = "en-us";
+        </script>
+    </head> 
+<body>
+    <button id="back" type="button" onclick="window.history.back()"><FONT size="2" align="center">Go Back</FONT><BR>⬅</button>
+    <button id="home" type="button" onclick="window.location.href='../index.html'"><FONT size="2" align="center">Home Page</FONT><BR>⌂</button>
+    <button id="theme" type="button" onclick="window.location.href='dark_auto_off.html'"><b><FONT align="center">Dark Theme</b><BR>☽</FONT></button>
+    <div class="text">
         <FONT size="7"><u>Update Page - a page for checking Website Update Status</u></FONT><BR>
         <FONT size="7" color="darkorange" id="current_status">Current Status: Loading Data...</FONT><BR>
         <FONT size="7" color="blue" id="recent_update">Recent Update: Loading Data...</FONT><BR>
         <FONT size="7" color="blue" id="upcoming_change">Upcoming Change: Loading Data...</FONT><BR>
-        <script type="text/javascript" src="../../global_Resources/javascript/updateSiteData.js"></script>
-<HR>
+        <script type="text/javascript" src="../../global_Resources/javascript/library/updateSiteData.js"></script>
+    <HR>
     <button id="switch_auto" type="button" onclick="window.location.href='light_auto_on.html'">Turn On</button><FONT size="6" color="gray">This Web Page will</FONT>&ensp;<FONT size="6">NOT</FONT>&ensp;<FONT size="6" color="gray">auto refresh.</FONT><BR>
     <FONT size="6" color="gray">Time elapsed after last status update - </FONT>
     <FONT size="6"><label id="countup_minutes">00</label>m<label id="countup_seconds">00</label>s
-    <script type="text/javascript" src="../../global_Resources/javascript/countup_timer.js"></script></FONT><BR>
+    <script type="text/javascript" src="../../global_Resources/javascript/library/countup_timer.js"></script></FONT><BR>
     <FONT size="5">Current Language: English</FONT><BR>
     <FONT size="5">Current Theme: Light</FONT><BR>
     <FONT size="6"><div id="lastUpdateTime">Website Last Update Time (Local Time): Getting GitHub API Data...</div></FONT>
-    <script type="text/javascript" src="../../global_Resources/javascript/lastUpdateTime.js"></script>
+    <!--Start of Entry Code [Old Tag Support]-->
+        <script type="module">
+            import { lastUpdateTime } from '../../global_Resources/javascript/module/secondary/lastUpdateTime.js';
+            let updateTimeMsg = await lastUpdateTime();
+            document.getElementById("lastUpdateTime").innerHTML = updateTimeMsg;
+        </script>
+    <!--End of Entry Code [Old Tag Support]-->
     <HR>
     <FONT size="5"><u>Why I am redirected to this Page?</u><BR>
     You are redirected to this Page because...
@@ -35,9 +41,9 @@
         <LI>The Web Page you visited is in Build/Update/Maintenance Process</LI>
         <LI>You clicked the Update Page Button from the Home Page</LI>
     </UL></FONT>
-</div>
-<FONT size="5" color="#AFAFAF" style="float: right; text-align: right;">XuPaperCup's Website<BR>
-<a href="https://github.com/XuPaperCup/xupapercup.github.io" target="_blank" id="powered">Build in <b>GitHub</b></a><BR>
-<IMG src="https://api.netlify.com/api/v1/badges/a304170d-a990-4536-bafb-91619abc6168/deploy-status"></FONT>
-</BODY>
-</HTML>
+    </div>
+    <FONT size="5" color="#AFAFAF" style="float: right; text-align: right;">XuPaperCup's Website<BR>
+    <a href="https://github.com/XuPaperCup/xupapercup.github.io" target="_blank" id="powered">Build in <b>GitHub</b></a><BR>
+    <IMG src="https://api.netlify.com/api/v1/badges/a304170d-a990-4536-bafb-91619abc6168/deploy-status"></FONT>
+</body>
+</html>
