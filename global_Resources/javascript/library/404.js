@@ -54,10 +54,9 @@ export async function display_404_in_en_us() {
         let updateTimeMsg = await lastUpdateTime();
         document.getElementById("lastUpdateTime").innerHTML = updateTimeMsg;
     // Change Language
-    const lang = document.getElementById("lang");
-    lang.addEventListener("click", ()=>{
+    document.getElementById("lang").addEventListener("click", ()=>{
         display_404_in_zh_hant();
-    })
+    });
 }
 // 404 function - zh-hant
 export async function display_404_in_zh_hant() {
@@ -112,9 +111,8 @@ export async function display_404_in_zh_hant() {
     // Entry Code [Old Tag Support]
     let updateTimeMsg = await lastUpdateTime();
     document.getElementById("lastUpdateTime").innerHTML = updateTimeMsg;
-    const lang = document.getElementById("lang");
     // Change Language
-    lang.addEventListener("click", ()=>{
+    document.getElementById("lang").addEventListener("click", ()=>{
         display_404_in_en_us();
-    })
+    });
 }

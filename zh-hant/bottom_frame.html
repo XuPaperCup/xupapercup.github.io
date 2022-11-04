@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../global_Resources/stylesheet/general_style/bottom_frame.css">
+    <link rel="stylesheet" href="../global_Resources/javascript/module/primary/showBttmFrame.css">
     <link rel="icon" type="image/x-icon" href="../global_Resources/favicon.png">
     <script type="text/javascript">
         const language = "zh-hant";
     </script>
 </head>
 <body>
+    <FONT size="5" color="red">(已棄用的底部框架) <a href="./index.html" id="powered">[點擊這裡進入首頁]</a></FONT><BR>
 <HR>
     <FONT size="5">目前使用語言: 繁體中文</FONT><BR>
     <FONT size="5"><div id="lastUpdateTime">網站最後更新時間(本地時間): 讀取GitHub API數據中...</div></FONT>
-    <script type="text/javascript" src="../global_Resources/javascript/lastUpdateTime.js"></script>
+    <!--入口代碼開始處 [舊標籤支持]-->
+        <script type="module">
+            import { lastUpdateTime } from '../global_Resources/javascript/module/secondary/lastUpdateTime.js';
+            let updateTimeMsg = await lastUpdateTime();
+            document.getElementById("lastUpdateTime").innerHTML = updateTimeMsg;
+        </script>
+    <!--入口代碼結束處 [舊標籤支持]-->
     <FONT size="5" color="#AFAFAF" style="float: right; text-align: right;">XuPaperCup的網站<BR>
     <a href="https://github.com/XuPaperCup/xupapercup.github.io" target="_blank" id="powered">在&thinsp;<b>GitHub</b>&thinsp;中構建</a></FONT>
 </body>
