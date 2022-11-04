@@ -9,6 +9,30 @@
     <script type="text/javascript">
         const language = "zh-hant";
     </script>
+    <style>
+        ion-icon {
+            pointer-events: none;
+        }
+        .social-icon {
+            color: #aaaaaa;
+            font-size: 75px;
+            transition: 0.2s;
+            text-decoration: none;
+            margin: 0px 1px;
+        }
+        .social-icon:hover {
+            color: #222222;
+        }
+        #youtube:active {
+            color: red;
+        }
+        #github:active {
+            color: black;
+        }
+        #twitter:active {
+            color: #1DA1F2;
+        }
+    </style>
 </head>
 <body>
     <FONT size="6"><b>XuPaperCup的網站 - 主頁</b></FONT><BR>
@@ -23,9 +47,15 @@
     <button type="button" onclick="window.location.href='src/MCJE/Hypixel/SkyBlock/Mining_Commisions.html'">Mining Commisions 數據</button><BR>
 <HR>
     <FONT size="6" style="border: solid;">社交媒體</FONT><BR>
-    <a href="https://www.youtube.com/channel/UCzKOA5_agarrb5GuWvYsI2w" target="_blank"><button type="button">我(XuPaperCup)的<BR>Youtube頻道</button></a>
-    <a href="https://github.com/XuPaperCup" target="_blank"><button type="button">我(XuPaperCup)的<BR>GitHub</button></a>
-    <a href="https://twitter.com/XuPaperCup" target="_blank"><button type="button">我(XuPaperCup)的<BR>Twitter</button></a>
+    <a id="youtube" class="social-icon" href="https://www.youtube.com/channel/UCzKOA5_agarrb5GuWvYsI2w" target="_blank" title="我(XuPaperCup)的Youtube頻道">
+        <ion-icon name="logo-youtube"></ion-icon>
+     </a>
+    <a id="github" class="social-icon" href="https://github.com/XuPaperCup" target="_blank" title="我(XuPaperCup)的GitHub">
+        <ion-icon name="logo-github"></ion-icon>
+    </a>
+    <a id="twitter" class="social-icon" href="https://twitter.com/XuPaperCup" target="_blank" title="我(XuPaperCup)的Twitter">
+        <ion-icon name="logo-twitter"></ion-icon>
+    </a>
 <HR>
     <FONT size="6" style="border: solid;">雜項</FONT><BR>
     <button id="lang" type="button" onclick="window.location.href='../en-us/index.html'">Switch Language to English</button><BR>
@@ -43,5 +73,7 @@
     <FONT size="5" color="#AFAFAF" style="float: right; text-align: right;">XuPaperCup的網站(2022年)<BR>
     <a href="https://github.com/XuPaperCup/xupapercup.github.io" target="_blank" id="powered">在&thinsp;<b>GitHub</b>&thinsp;中構建</a><BR>
     <IMG src="https://api.netlify.com/api/v1/badges/a304170d-a990-4536-bafb-91619abc6168/deploy-status"></FONT>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
