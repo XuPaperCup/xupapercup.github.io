@@ -1,5 +1,4 @@
-// legacy xhr module avaliable for Module [lastUpdateTime], (filepath: '../secondary/legacy/lastUpdateTime.js')
-// modern fetch module avaliable for Module [lastUpdateTime], (filepath: '../secondary/lastUpdateTime.js')
+// fetch module avaliable for Module [lastUpdateTime], (filepath: '../secondary/lastUpdateTime.js')
 import { lastUpdateTime } from '../secondary/lastUpdateTime.js';
 
 // Module - [showBttmFrame] await [lastUpdateTime]
@@ -15,14 +14,14 @@ async function showBttmFrame() {
         let bottom_frame = document.getElementById("bottom_frame");
             if (bottom_frame === null) {
                 console.log(`\nUnable to execute Module [showBttmFrame] await [lastUpdateTime],\nReason: There is no "bottom_frame" identifier in this web page element.`);
-            }
+            } 
             else {
                 let updateTimeMsg;
             try {
                 updateTimeMsg = await lastUpdateTime(); 
             } catch (e) {
                 console.log(e);
-                updateTimeMsg = `<FONT color="red">Error! ${e}</FONT>`;
+                updateTimeMsg = `<FONT color="red">Error: ${e}</FONT>`;
             }
             const bottom_line = `<HR>
             <FONT size="5">Current Language: English</FONT><BR>
@@ -44,7 +43,7 @@ async function showBttmFrame() {
                 updateTimeMsg = await lastUpdateTime(); 
             } catch (e) {
                 console.log(e);
-                updateTimeMsg = `<FONT color="red">錯誤! ${e}</FONT>`;
+                updateTimeMsg = `<FONT color="red">錯誤: ${e}</FONT>`;
             }
             const bottom_line = `<HR>
             <FONT size="5">目前使用語言: 繁體中文</FONT><BR>
