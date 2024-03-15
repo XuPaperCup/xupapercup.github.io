@@ -1,0 +1,55 @@
+ion-icon {
+    pointer-events: none;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+    height: 80px;
+    width: 230px;
+    margin: 5px;
+}
+
+button.misc {
+    background-color: gray;
+    color: white;
+    height: 50px;
+    width: 260px;
+    font-size: 19px;
+}
+
+button#lang {
+    background-color: green;
+}
+
+span {
+    cursor: default;
+    font-size: xx-large;
+}
+
+span#heading {
+    font-weight: bold;
+}
+
+span#instruction {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+span.subheading {
+    border: solid;
+}
+
+span.subheading-eng {
+    font-size: x-large;
+}
+
+span.topic {
+    text-decoration: underline;
+}
+
+a.social-icon {
+    font-size: 75px;
+    text-decoration: none;
+    margin: 0 1px;
+}

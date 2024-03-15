@@ -1,0 +1,34 @@
+a {
+    color:blue;
+    cursor: pointer !important;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: aqua;
+}
+
+a:active {
+    color: darkcyan !important;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+button {
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer !important;
+}
+
+button:hover {
+    background-color: aqua !important;
+    color: black !important;
+}
+
+button:active {
+    background-color: darkcyan !important;
+    color: white !important;
+}

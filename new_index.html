@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XuPaperCup's Website - Redirecting</title>
+</head>
+<body>
+    Redirecting...
+    <script type="text/javascript">
+        const myStorage = window.localStorage;
+        const language = myStorage.getItem("language");
+        if (language === null) {
+            myStorage.setItem("language", "en-US");
+            language = "en-US";
+        };
+        window.location.href = `${language}/index.html`
+    </script>
+</body>
+</html>

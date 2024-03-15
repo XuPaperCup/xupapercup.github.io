@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XuPaperCup's Website - (OLD) Home Page</title>
+    <link rel="stylesheet" href="../global_Resources/stylesheet/general_style/style_index.css">
+    <link rel="icon" type="image/x-icon" href="../global_Resources/favicon.png">
+    <!--Set Website Language Code-->
+    <script type="text/javascript">
+        const language = "en-us";
+    </script>
+    <style>
+        ion-icon {
+            pointer-events: none;
+        }
+        .social-icon {
+            color: #aaaaaa;
+            font-size: 75px;
+            text-decoration: none;
+            margin: 0 1px;
+        }
+        .social-icon:hover {
+            color: #333333;
+        }
+        #youtube:active {
+            color: red;
+        }
+        #github:active {
+            color: black;
+        }
+        #twitter:active {
+            color: #1DA1F2;
+        }
+    </style>
+</head>
+<body>
+    <!-- <FONT size="6" style="border: solid rgb(200, 200, 0); color: blue;" id="notice">[Scheduled Update Notice] Bottom Frame Optimization will implement at around 2:30pm (GMT +8:00) <span onClick="document.getElementById('notice').remove();" style="cursor: pointer; color: coral;">[Dismiss]</span></FONT><BR> -->
+    <FONT size="6"><b>XuPaperCup's Website - Home Page</b></FONT><BR>
+<HR>
+    <FONT size="5"><b>Please select an option below:</b></FONT><BR>
+<HR>
+    <FONT size="6" style="border: solid;">Minecraft Bedrock Edition</FONT><BR>  
+    <FONT size="6"><u>Addon Creator</u></FONT><BR>
+    <button type="button" onclick="window.location.href='src/MCBE/addon-making/Learning_Material.html'">Learning Material</button>
+    <button type="button" onclick="window.location.href='src/MCBE/addon-making/Useful_Link.html'">Useful Link</button>
+<HR>
+    <FONT size="6" style="border: solid;">Minecraft Java Edition</FONT><BR> 
+    <FONT size="6"><u>Hypixel Server: SkyBlock</u></FONT><BR>
+    <button type="button" onclick="window.location.href='src/MCJE/Hypixel/SkyBlock/Hypixel_Skyblock_Bingo_Guide.html'">Bingo Guide</button>
+<HR>
+    <FONT size="6" style="border: solid;">Social Media</FONT><BR><BR>
+    <a id="youtube" class="social-icon" href="https://www.youtube.com/channel/UCzKOA5_agarrb5GuWvYsI2w" target="_blank" title="My(XuPaperCup) YouTube Channel">
+        <ion-icon name="logo-youtube"></ion-icon>
+    </a>
+     <a id="github" class="social-icon" href="https://github.com/XuPaperCup" target="_blank" title="My(XuPaperCup) GitHub">
+        <ion-icon name="logo-github"></ion-icon>
+    </a>
+    <a id="twitter" class="social-icon" href="https://twitter.com/XuPaperCup" target="_blank" title="My(XuPaperCup) Twitter">
+        <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+<HR>
+    <FONT size="6" style="border: solid;">Miscellaneous</FONT><BR> 
+    <button id="lang" type="button" onclick="window.location.href='../zh-hant/index.html'">切換語言為繁體中文</button>
+    <button id="update" type="button" onclick="window.location.href='Update/light_auto_on.html'">Website Update Page</button>
+    <a href="https://github.com/XuPaperCup/xupapercup.github.io/issues" target="_blank"><button id="update" type="button">Report Website Issue(s)</button></a>
+<HR>
+    <FONT size="5">Current Language: English</FONT><BR>
+    <FONT size="5"><div id="lastUpdateTime">Website Last Update Time (Local Time): Getting GitHub API Data...</div></FONT>
+    <!--Start of Entry Code [Old Tag Support]-->
+        <script type="module">
+            import { lastUpdateTime } from '../global_Resources/javascript/module/secondary/lastUpdateTime.js';
+            let updateTimeMsg = await lastUpdateTime();
+            document.getElementById("lastUpdateTime").innerHTML = updateTimeMsg;
+        </script>
+    <!--End of Entry Code [Old Tag Support]-->
+    <FONT size="5" style="background-color: gray; color: white">Got a problem or suggestion? Tell them in Home Page➡Miscellaneous➡Report Website Issue(s)!</FONT><BR>
+    <FONT size="5" color="#AFAFAF" style="float: right; text-align: right;">XuPaperCup's Website, Since 2022-2023<BR>
+    <a href="https://github.com/XuPaperCup/xupapercup.github.io" target="_blank" id="powered">Build in <b>GitHub</b></a><BR></FONT>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

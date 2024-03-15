@@ -1,77 +1,76 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-HK">
+<html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XuPaperCup的網站 - 主頁</title>
-    <link rel="stylesheet" href="../global_Resources/stylesheet/general_style/style_index.css">
-    <link rel="icon" type="image/x-icon" href="../global_Resources/favicon.png">
-    <script type="text/javascript">
-        const language = "zh-hant";
-    </script>
-    <style>
-        ion-icon {
-            pointer-events: none;
-        }
-        .social-icon {
-            color: #aaaaaa;
-            font-size: 75px;
-            transition: 0.2s;
-            text-decoration: none;
-            margin: 0px 1px;
-        }
-        .social-icon:hover {
-            color: #222222;
-        }
-        #youtube:active {
-            color: red;
-        }
-        #github:active {
-            color: black;
-        }
-        #twitter:active {
-            color: #1DA1F2;
-        }
-    </style>
+    <link rel="stylesheet" href="../Resources/stylesheet/global/light.css">
+    <link rel="stylesheet" href="../Resources/stylesheet/index.css">
+    <link rel="icon" type="image/png" href="../Resources/images/favicon.png">
 </head>
+
 <body>
-    <FONT size="6"><b>XuPaperCup的網站 - 主頁</b></FONT><BR>
-<HR>
-    <FONT size="5"><b>請在下方選擇一個選項:</b></FONT><BR>
-<HR>
-    <FONT size="6" style="border: solid;">我的世界基岩版</FONT><FONT size="5">(Minecraft Bedrock Edition)</FONT><BR>  
-    <FONT size="6">暫無內容,敬請期待!</FONT><BR>
-<HR>
-    <FONT size="6" style="border: solid;">我的世界Java版</FONT><FONT size="5">(Minecraft Java Edition)</FONT><BR> 
-    <FONT size="6"><u>Hypixel 伺服器: SkyBlock</u></FONT><BR>
-    <button type="button" onclick="window.location.href='src/MCJE/Hypixel/SkyBlock/Mining_Commisions.html'">Mining Commisions 數據</button><BR>
-<HR>
-    <FONT size="6" style="border: solid;">社交媒體</FONT><BR>
-    <a id="youtube" class="social-icon" href="https://www.youtube.com/channel/UCzKOA5_agarrb5GuWvYsI2w" target="_blank" title="我(XuPaperCup)的Youtube頻道">
-        <ion-icon name="logo-youtube"></ion-icon>
-     </a>
-    <a id="github" class="social-icon" href="https://github.com/XuPaperCup" target="_blank" title="我(XuPaperCup)的GitHub">
-        <ion-icon name="logo-github"></ion-icon>
-    </a>
-    <a id="twitter" class="social-icon" href="https://twitter.com/XuPaperCup" target="_blank" title="我(XuPaperCup)的Twitter">
-        <ion-icon name="logo-twitter"></ion-icon>
-    </a>
-<HR>
-    <FONT size="6" style="border: solid;">雜項</FONT><BR>
-    <button id="lang" type="button" onclick="window.location.href='../en-us/index.html'">Switch Language to English</button><BR>
-<HR>
-    <FONT size="5">目前使用語言: 繁體中文</FONT><BR>
-    <FONT size="5"><div id="lastUpdateTime">網站最後更新時間(本地時間): 讀取GitHub API數據中...</div></FONT>
-    <!--入口代碼開始處 [舊標籤支持]-->
-        <script type="module">
-            import { lastUpdateTime } from '../global_Resources/javascript/module/secondary/lastUpdateTime.js';
-            let updateTimeMsg = await lastUpdateTime();
-            document.getElementById("lastUpdateTime").innerHTML = updateTimeMsg;
-        </script>
-    <!--入口代碼結束處 [舊標籤支持]-->
-    <FONT size="5" color="#AFAFAF" style="float: right; text-align: right;">XuPaperCup的網站(2022-2023年)<BR>
-    <a href="https://github.com/XuPaperCup/xupapercup.github.io" target="_blank" id="powered">在&thinsp;<b>GitHub</b>&thinsp;中構建</a><BR></FONT>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div>
+        <span id="heading">XuPaperCup的網站 - 主頁</span>
+    </div>
+    <hr>
+    <div>
+        <span id="instruction">請在下方選擇一個選項:</span>
+    </div>
+    <hr>
+    <div>
+        <span class="subheading">我的世界基岩版</span><span class="subheading-eng">(Minecraft Bedrock Edition)</span>
+        <div>
+            <span style="font-size: xx-large; cursor: default;">暫無內容,敬請期待!</span>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <span class="subheading">我的世界Java版</span><span class="subheading-eng">(Minecraft Java Edition)</span>
+        <div>
+            <span class="topic">Hypixel 伺服器: SkyBlock</span><br>
+            <button type="button" onclick="window.location.href='src/MCJE/Hypixel/SkyBlock/Mining_Commisions.html';"
+                style="font-size: x-large;">Mining
+                Commisions 數據</button>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <span class="subheading">社交媒體</span>
+        <div>
+            <br>
+            <a class="social-icon" href="https://www.youtube.com/channel/UCzKOA5_agarrb5GuWvYsI2w" target="_blank"
+                title="我(XuPaperCup)的Youtube頻道" style="color: red;">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://github.com/XuPaperCup" target="_blank" title="我(XuPaperCup)的GitHub"
+                style="color: black;">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://twitter.com/XuPaperCup" target="_blank"
+                title="我(XuPaperCup)的Twitter / X" style="color: #1DA1F2;">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <span class="subheading">雜項</span>
+        <div>
+            <button class="misc" id="lang" type="button" onclick="window.location.href='../en-US/index.html'">Switch
+                Language to English</button>
+            <button class="misc" id="theme" type="button">temp
+                Theme</button><br>
+            <button class="misc" type="button" onclick="window.location.href=''">Website Update
+                Page</button>
+            <button class="misc" type="button"
+                onclick="window.open(String.raw`https://github.com/XuPaperCup/xupapercup.github.io/issues`, '_blank')">報告網站問題(英文)</button>
+        </div>
+    </div>
+    <hr>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
